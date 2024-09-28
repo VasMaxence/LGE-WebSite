@@ -1,5 +1,5 @@
 <template>
-  <button @click="handleClick" :class="className ? 'rounded-lg flex items-center justify-center py-2 h-[50px] ' + className : 'rounded-lg flex items-center justify-center py-2 h-[50px]'">
+  <button @click="onClick" :class="className ? 'rounded-lg flex items-center justify-center py-2 h-[50px] ' + className : 'rounded-lg flex items-center justify-center py-2 h-[50px]'">
     {{ text }}
   </button>
 </template>
@@ -19,8 +19,4 @@ defineProps({
     required: false,
   },
 });
-
-const handleClick = () => {
-  onClick();
-};
 </script>

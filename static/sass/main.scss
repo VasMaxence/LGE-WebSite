@@ -20,6 +20,13 @@ html {
   font-family: "Recharge", sans-serif;
 }
 
+.sm-main-title {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  font-family: "Recharge", sans-serif;
+}
+
 .main-subtitle {
   font-size: 32px;
   color: #ffffff;
@@ -199,9 +206,34 @@ html {
   background-color: $purple;
 }
 
+.red-important {
+  background-color: $red !important;
+}
+
+.blue-important {
+  background-color: $blue !important;
+}
+
+.yellow-important {
+  background-color: $yellow !important;
+}
+
+.green-important {
+  background-color: $green !important;
+}
+
+.purple-important {
+  background-color: $purple !important;
+}
+
 .blured-box {
   filter: blur(200px);
   -webkit-filter: blur(200px);
+}
+
+.sm-blured-box {
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
 }
 
 .subtitle {
@@ -247,4 +279,8 @@ html {
       cursor: pointer;
     }
   }
+}
+
+.underline {
+  text-decoration: underline;
 }

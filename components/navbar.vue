@@ -3,15 +3,18 @@
     <div class="flex-1" />
     <div class="hidden lg:flex gap-x-12 items-center">
       <a href="/" class="link">Acceuil</a>
-      <a href="/" class="link">Laser Game</a>
-      <a href="/" class="link">Bowling</a>
-      <a href="/" class="link">Quizz Master</a>
-      <a href="/" class="link">Nos Centres</a>
-      <Button text="Contact" :onClick="() => {}" className="blue-button px-8 !h-[40px]" />
+      <a href="/laser-game" class="link">Laser Game</a>
+      <a href="/bowling" class="link">Bowling</a>
+      <a href="/quizz-master" class="link">Quizz Master</a>
+      <a href="/our-place" class="link">Nos Centres</a>
+      <router-link to="/contact">
+        <Button text="Contact" :onClick="() => {}" className="blue-button px-8 !h-[40px]" />
+      </router-link>
     </div>
   </div>
 </template>
 
 <script>
 import Button from "./button/Button.vue";
+
 </script>

@@ -4,7 +4,7 @@
       <h1 class="card-body leading-7">{{ title }}</h1>
       <h2 class="card-subtitle leading-7">{{ subtitle }}</h2>
     </div>
-    <Button text="Réserver" :onClick="() => {}" :className="'px-6 ' + buttonClassName" />
+    <Button text="Réserver" :onClick="onClick" :className="'px-6 ' + buttonClassName" />
   </div>
 </template>
 
@@ -18,6 +18,10 @@ defineProps({
   },
   subtitle: {
     type: String,
+    required: true,
+  },
+  onClick: {
+    type: Function,
     required: true,
   },
   className: {
