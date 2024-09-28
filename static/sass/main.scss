@@ -13,6 +13,19 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.main-title {
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  font-family: "Recharge", sans-serif;
+}
+
+.main-subtitle {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
 .bg-white-low {
   background-color: rgba($color: #ffffff, $alpha: 0.1);
 }
@@ -161,6 +174,11 @@ html {
   color: rgba($color: #ffffff, $alpha: 0.8);
 }
 
+.card-light-body {
+  font-size: 17px;
+  color: rgba($color: #ffffff, $alpha: 0.6);
+}
+
 .red {
   background-color: $red;
 }
@@ -183,9 +201,50 @@ html {
 
 .blured-box {
   filter: blur(200px);
+  -webkit-filter: blur(200px);
 }
 
 .subtitle {
   font-size: 21px;
   color: rgba($color: #ffffff, $alpha: 0.8);
+}
+
+.footer {
+  .title {
+    font-size: 29px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .link {
+    color: rgba($color: #ffffff, $alpha: 0.8);
+    font-size: 19px;
+    font-weight: 500;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  .link {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
 }

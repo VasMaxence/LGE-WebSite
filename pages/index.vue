@@ -1,6 +1,17 @@
 <template>
-  <div class="overflow-x-hidden">
-    <div class="py-40" />
+  <div class="w-full relative overflow-x-hidden">
+    <Navbar />
+
+    <!-- Main Image -->
+    <img src="@/static/images/main_home.png" alt="Loisir 06 Main Image" class="absolute top-0 z-0 w-[100wh]" />
+
+    <div class="w-full h-[85vh] hidden sm:relative">
+      <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[300px] h-[300px] rounded-full blue blured-box" />
+      <div class="relative flex flex-col items-center justify-center h-full z-[50]">
+        <!-- <h2 class="main-subtitle">Loisir 06</h2> -->
+        <h1 class="w-1/2 main-title text-center leading-[70px]">Démarrez une expérience inédite</h1>
+      </div>
+    </div>
 
     <div class="px-40">
       <div class="flex flex-row gap-x-10">
@@ -86,7 +97,7 @@
       </div>
     </div>
 
-    <div class="py-40" />
+    <div class="py-28" />
 
     <Separator>
       <div class="flex flex-col items-center gap-y-2">
@@ -98,13 +109,13 @@
       </div>
     </Separator>
 
-    <div class="py-40" />
+    <div class="py-28" />
 
     <!-- LGE -->
     <div class="px-24">
       <div class="relative w-full items-center justify-center">
         <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full red blured-box" />
-        <WhiteCard className="z-[999] grid grid-cols-2 gap-x-40">
+        <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
           <div class="flex flex-col">
             <h1 class="card-title">Laser Game Évolution</h1>
             <div class="py-3" />
@@ -136,7 +147,7 @@
     <div class="px-24">
       <div class="relative w-full items-center justify-center">
         <div class="absolute top-1/2 transform -translate-y-1/2 right-[-300px] z-0 w-[400px] h-[400px] rounded-full blue blured-box" />
-        <WhiteCard className="z-[999] grid grid-cols-2 gap-x-40">
+        <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
           <div class="flex flex-col">
             <h1 class="card-title">Bowling</h1>
             <div class="py-3" />
@@ -165,7 +176,7 @@
     <div class="px-24">
       <div class="relative w-full items-center justify-center">
         <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full yellow blured-box" />
-        <WhiteCard className="z-[999] grid grid-cols-2 gap-x-40">
+        <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
           <div class="flex flex-col">
             <h1 class="card-title">Quizz Master</h1>
             <div class="py-3" />
@@ -193,7 +204,7 @@
     <div class="px-24">
       <div class="relative w-full items-center justify-center">
         <div class="absolute top-1/2 transform -translate-y-1/2 right-[-300px] z-0 w-[400px] h-[400px] rounded-full green blured-box" />
-        <WhiteCard className="z-[999] grid grid-cols-2 gap-x-40">
+        <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
           <div class="flex flex-col">
             <h1 class="card-title">Billard</h1>
             <div class="py-3" />
@@ -216,7 +227,7 @@
       </div>
     </div>
 
-    <div class="py-40" />
+    <div class="py-28" />
 
     <Separator>
       <div class="flex flex-col items-center gap-y-2">
@@ -225,11 +236,51 @@
       </div>
     </Separator>
 
-    <div class="py-40" />
+    <div class="py-20" />
 
+    <div class="px-40">
+      <div class="w-full flex flex-wrap gap-x-3 gap-y-3">
+        <WhiteCard class="!w-[310px] flex flex-col justify-center">
+          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
+          <div class="py-2" />
+          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
+          <div class="py-1" />
+          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
+        </WhiteCard>
+        <WhiteCard class="!w-[310px] flex flex-col justify-center">
+          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
+          <div class="py-2" />
+          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
+          <div class="py-1" />
+          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
+        </WhiteCard>
+        <WhiteCard class="!w-[310px] flex flex-col justify-center">
+          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
+          <div class="py-2" />
+          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
+          <div class="py-1" />
+          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
+        </WhiteCard>
+        <WhiteCard class="!w-[310px] flex flex-col justify-center">
+          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
+          <div class="py-2" />
+          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
+          <div class="py-1" />
+          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
+        </WhiteCard>
+        <WhiteCard class="!w-[310px] flex flex-col justify-center">
+          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
+          <div class="py-2" />
+          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
+          <div class="py-1" />
+          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
+        </WhiteCard>
+      </div>
+    </div>
 
+    <div class="py-20" />
 
-    <div class="py-40" />
+    <Footer />
   </div>
 </template>
 
@@ -238,4 +289,6 @@ import Button from "@/components/button/Button.vue";
 import WhiteCard from "~/components/card/WhiteCard.vue";
 import Separator from "~/components/separator.vue";
 import CenterCard from "~/components/card/CenterCard.vue";
+import Footer from "~/components/Footer.vue";
+import Navbar from "~/components/navbar.vue";
 </script>
