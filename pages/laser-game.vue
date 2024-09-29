@@ -224,21 +224,27 @@
 
     <div class="px-12 md:px-24 xl:px-40">
       <div class="w-full flex flex-wrap gap-x-3 gap-y-3">
-        <WhiteCard class="w-full md:!w-[310px] flex flex-col justify-center">
+        <WhiteCard class="w-full md:!w-[310px] flex flex-col">
           <img alt="event-img-1" src="@/static/images/LGE/shogun_1.png" class="rounded-lg" />
           <div class="py-2" />
           <h1 class="card-subtitle leading-7">Partie Standart</h1>
           <div class="py-1" />
-          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
+          <p class="card-light-body">1 partie - 11 € / personne</p>
+          <p class="card-light-body">2 partie - 20 € / personne *</p>
+          <p class="card-light-body">3 partie - 25 € / personne *</p>
+          <div class="py-1" />
+          <p class="card-light-body">* disponible hors week-end et à partir de 18h.</p>
         </WhiteCard>
-        <WhiteCard class="w-full md:!w-[310px] flex flex-col justify-center">
+        <WhiteCard class="w-full md:!w-[310px] flex flex-col">
           <img alt="event-img-1" src="@/static/images/LGE/shogun_2.png" class="rounded-lg" />
           <div class="py-2" />
           <h1 class="card-subtitle leading-7">Anniversaire</h1>
           <div class="py-1" />
-          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
+          <p class="card-light-body">22 € / personne *</p>
+          <div class="py-1" />
+          <p class="card-light-body">* 10 joueurs minimum, sur réservation uniquement.</p>
         </WhiteCard>
-        <WhiteCard class="hidden md:flex w-full md:!w-[310px] flex flex-col justify-center">
+        <WhiteCard class="hidden md:flex w-full md:!w-[310px] flex flex-col">
           <img alt="event-img-1" src="@/static/images/LGE/shogun_1.png" class="rounded-lg" />
           <div class="py-2" />
           <h1 class="card-subtitle leading-7">No Limit</h1>

@@ -123,14 +123,14 @@
 
     <div class="px-12 md:px-24 xl:px-40">
       <div class="w-full flex flex-wrap gap-x-3 gap-y-3">
-        <WhiteCard class="w-full md:!w-[310px] flex flex-col justify-center">
+        <WhiteCard class="w-full md:!w-[310px] flex flex-col">
           <img alt="event-img-1" src="@/static/images/LGE/shogun_1.png" class="rounded-lg" />
           <div class="py-2" />
           <h1 class="card-subtitle leading-7">Partie Standart</h1>
           <div class="py-1" />
           <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
         </WhiteCard>
-        <WhiteCard class="w-full md:!w-[310px] flex flex-col justify-center">
+        <WhiteCard class="w-full md:!w-[310px] flex flex-col">
           <img alt="event-img-1" src="@/static/images/LGE/shogun_2.png" class="rounded-lg" />
           <div class="py-2" />
           <h1 class="card-subtitle leading-7">Anniversaire</h1>
@@ -225,10 +225,13 @@
               "
               className="px-6 !h-[60px] yellow-button"
             />
-            <button @click="() => {
-              onClickMap('Mougins');
-            }">
-
+            <button
+              @click="
+                () => {
+                  onClickMap('Mougins');
+                }
+              "
+            >
               <WhiteCard className="!px-4 !py-4 !rounded-md flex items-center justify-center w-[60px]">
                 <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 23.5V6.5H16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

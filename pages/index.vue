@@ -34,7 +34,7 @@
     <!-- Principal activity -->
     <div class="px-40 hidden xl:flex flex-col">
       <div class="flex flex-row gap-x-10">
-        <WhiteCard class="flex flex-col flex-grow w-[30%]">
+        <WhiteCard class="flex flex-col flex-grow w-[30%]" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="white-title robot">Laser Game</h1>
           <p class="white-body robot">Visez l'émotion 100% Laser Game.</p>
           <div class="py-3 h-full" />
@@ -56,7 +56,7 @@
             <img alt="laser-game-img-2" src="@/static/images/LGE/2.png" class="rounded-lg" />
           </div>
         </WhiteCard>
-        <WhiteCard class="flex flex-col flex-grow w-[30%]">
+        <WhiteCard class="flex flex-col flex-grow w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <h1 class="white-title robot">Bowling</h1>
           <p class="white-body robot">Visez l'émotion 100% Bowling.</p>
           <div class="py-3 h-full" />
@@ -78,7 +78,7 @@
             <img alt="bowling-img-2" src="@/static/images/Bowling/2.png" class="rounded-lg" />
           </div>
         </WhiteCard>
-        <WhiteCard class="flex flex-col flex-grow w-[30%]">
+        <WhiteCard class="flex flex-col flex-grow w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           <h1 class="white-title robot">Quizz Master</h1>
           <p class="white-body robot">Venez vous éclatez entre amis ou en famille.</p>
           <div class="py-3 h-full" />
@@ -106,7 +106,7 @@
 
       <div class="!w-full flex flex-row justify-center gap-x-10">
         <div class="w-[32%]">
-          <WhiteCard class="w-full flex flex-col flex-grow">
+          <WhiteCard class="w-full flex flex-col flex-grow" data-aos="fade-up" data-aos-duration="1000">
             <h1 class="white-title robot">Billard</h1>
             <p class="white-body robot">Visez l'émotion 100% Billard.</p>
             <div class="py-3 h-full" />
@@ -131,7 +131,7 @@
         </div>
         <!-- TODO HIDE -->
         <div class="w-[32%]">
-          <WhiteCard class="w-full flex flex-col flex-grow">
+          <WhiteCard class="w-full flex flex-col flex-grow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <h1 class="white-title robot">Karting</h1>
             <p class="white-body robot">Visez l'émotion 100% Karting.</p>
             <div class="py-3 h-full" />
@@ -390,10 +390,10 @@
       </div>
     </Separator>
 
-    <div class="py-12 sm:py-16 xl:py-28" />
+    <div class="py-12 sm:py-16" />
 
     <!-- LGE -->
-    <div class="hidden xl:flex xl:px-24">
+    <div class="hidden xl:flex xl:px-24" data-aos="fade-right" data-aos-duration="500">
       <div class="relative w-full items-center justify-center">
         <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full red blured-box" />
         <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
@@ -402,15 +402,9 @@
             <div class="py-3" />
             <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
             <div class="py-3" />
-            <Button
-              text="En savoir plus sur l'activité"
-              :onClick="
-                () => {
-                  onClickReservations('nice');
-                }
-              "
-              className="!w-fit px-10 white-button"
-            />
+            <router-link to="/laser-game">
+              <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
+            </router-link>
             <div class="py-8" />
             <div class="flex flex-wrap gap-x-3 gap-y-3">
               <img alt="laser-game-img-1" src="@/static/images/LGE/1.png" class="rounded-lg" />
@@ -456,15 +450,9 @@
           <div class="py-3" />
           <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
           <div class="py-3" />
-          <Button
-            text="En savoir plus sur l'activité"
-            :onClick="
-              () => {
-                onClickReservations('nice');
-              }
-            "
-            className="!w-fit px-10 white-button"
-          />
+          <router-link to="/laser-game">
+            <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
+          </router-link>
           <div class="py-4" />
           <h3 class="card-subtitle">Nos centres</h3>
           <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
@@ -502,7 +490,7 @@
     <div class="py-4 lg:py-8" />
 
     <!-- Bowling -->
-    <div class="hidden xl:flex xl:px-24">
+    <div class="hidden xl:flex xl:px-24" data-aos="fade-left" data-aos-duration="500">
       <div class="relative w-full items-center justify-center">
         <div class="absolute top-1/2 transform -translate-y-1/2 right-[-300px] z-0 w-[400px] h-[400px] rounded-full blue blured-box" />
         <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
@@ -511,15 +499,9 @@
             <div class="py-3" />
             <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
             <div class="py-3" />
-            <Button
-              text="En savoir plus sur l'activité"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-              className="!w-fit px-10 white-button"
-            />
+            <router-link to="/bowling">
+              <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
+            </router-link>
             <div class="py-8" />
             <div class="flex flex-wrap gap-x-3 gap-y-3">
               <img alt="bowling-img-1" src="@/static/images/Bowling/1.png" class="rounded-lg" />
@@ -553,15 +535,9 @@
           <div class="py-3" />
           <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
           <div class="py-3" />
-          <Button
-            text="En savoir plus sur l'activité"
-            :onClick="
-              () => {
-                onClickReservations('mougins');
-              }
-            "
-            className="!w-fit px-10 white-button"
-          />
+          <router-link to="/bowling">
+            <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
+          </router-link>
           <div class="py-4" />
           <h3 class="card-subtitle">Nos centres</h3>
           <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
@@ -588,7 +564,7 @@
     <div class="py-4 lg:py-8" />
 
     <!-- Quizz Master -->
-    <div class="hidden xl:flex xl:px-24">
+    <div class="hidden xl:flex xl:px-24" data-aos="fade-right" data-aos-duration="500">
       <div class="relative w-full items-center justify-center">
         <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full yellow blured-box" />
         <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
@@ -597,15 +573,9 @@
             <div class="py-3" />
             <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
             <div class="py-3" />
-            <Button
-              text="En savoir plus sur l'activité"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-              className="!w-fit px-10 white-button"
-            />
+            <router-link to="/quizz-master">
+              <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
+            </router-link>
             <div class="py-8" />
             <div class="flex flex-wrap gap-x-3 gap-y-3">
               <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg" />
@@ -639,15 +609,9 @@
           <div class="py-3" />
           <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
           <div class="py-3" />
-          <Button
-            text="En savoir plus sur l'activité"
-            :onClick="
-              () => {
-                onClickReservations('mougins');
-              }
-            "
-            className="!w-fit px-10 white-button"
-          />
+          <router-link to="/quizz-master">
+            <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
+          </router-link>
           <div class="py-4" />
           <h3 class="card-subtitle">Nos centres</h3>
           <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
@@ -674,7 +638,7 @@
     <div class="py-4 lg:py-8" />
 
     <!-- Billard -->
-    <div class="hidden xl:flex xl:px-24">
+    <div class="hidden xl:flex xl:px-24" data-aos="fade-left" data-aos-duration="500">
       <div class="relative w-full items-center justify-center">
         <div class="absolute top-1/2 transform -translate-y-1/2 right-[-300px] z-0 w-[400px] h-[400px] rounded-full green blured-box" />
         <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
@@ -683,15 +647,9 @@
             <div class="py-3" />
             <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
             <div class="py-3" />
-            <Button
-              text="En savoir plus sur l'activité"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-              className="!w-fit px-10 white-button"
-            />
+            <router-link to="/billard">
+              <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
+            </router-link>
             <div class="py-8" />
             <div class="flex flex-wrap gap-x-3 gap-y-3">
               <img alt="billard-img-1" src="@/static/images/Billard/1.png" class="rounded-lg" />
@@ -725,15 +683,9 @@
           <div class="py-3" />
           <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
           <div class="py-3" />
-          <Button
-            text="En savoir plus sur l'activité"
-            :onClick="
-              () => {
-                onClickReservations('mougins');
-              }
-            "
-            className="!w-fit px-10 white-button"
-          />
+          <router-link to="/billard">
+            <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
+          </router-link>
           <div class="py-4" />
           <h3 class="card-subtitle">Nos centres</h3>
           <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
@@ -766,7 +718,7 @@
       </div>
     </Separator>
 
-    <div class="py-12 sm:py-16 xl:py-28" />
+    <div class="py-12 sm:py-16" />
 
     <div class="px-12 md:px-24 xl:px-40">
       <div class="w-full flex flex-wrap gap-x-3 gap-y-3">

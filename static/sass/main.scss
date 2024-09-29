@@ -47,6 +47,10 @@ html {
   font-weight: bold;
 }
 
+.color-low-white {
+  background-color: rgba($color: #ffffff, $alpha: 0.2);
+}
+
 .white-body {
   font-size: 21px;
   color: rgba($color: #ffffff, $alpha: 0.8);
@@ -186,6 +190,10 @@ html {
   color: rgba($color: #ffffff, $alpha: 0.6);
 }
 
+.color-white {
+  color: #ffffff;
+}
+
 .red {
   background-color: $red;
 }
@@ -283,4 +291,49 @@ html {
 
 .underline {
   text-decoration: underline;
+}
+
+.loisir06-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  .loisir06-form-input-title {
+    font-size: 15px;
+    font-weight: 400;
+    // color: $darkBlue;
+  }
+
+  .loisir06-form-input {
+    padding: 15px;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    padding-right: 20px;
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+
+    &:hover {
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+    }
+
+    &:focus {
+      border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+    }
+  }
+}
+
+.error-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: $redError;
+}
+
+.success-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: $greenSuccess;
 }
