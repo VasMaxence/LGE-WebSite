@@ -1,5 +1,5 @@
 <template>
-  <div :class="className ? 'white-card w-full ' + className : 'white-card w-full px-8 py-5 rounded-xl flex flex-row gap-x-4'">
+  <div :class="className ? 'white-card w-full px-8 py-5 rounded-xl flex flex-col gap-y-5 md:flex-row gap-x-4 ' + className : 'white-card w-full px-8 py-5 rounded-xl flex flex-col gap-y-5 md:flex-row gap-x-4'">
     <div class="flex-1 flex flex-col">
       <h1 class="card-body leading-7">{{ title }}</h1>
       <h2 class="card-subtitle leading-7">{{ subtitle }}</h2>

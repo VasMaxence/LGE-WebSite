@@ -149,7 +149,7 @@
       </div>
     </div>
 
-    <div class="px-24 hidden md:flex xl:hidden flex-col">
+    <div class="px-24 hidden lg:flex xl:hidden flex-col">
       <div class="flex flex-row gap-x-10">
         <WhiteCard class="flex flex-col flex-grow w-[30%]">
           <h1 class="white-title robot">Laser Game</h1>
@@ -270,7 +270,7 @@
       </div>
     </div>
 
-    <div class="px-24 flex md:hidden flex-col gap-y-8">
+    <div class="px-8 flex lg:hidden flex-col gap-y-8">
       <WhiteCard class="w-full flex flex-col flex-grow">
         <h1 class="white-title robot">Laser Game</h1>
         <p class="white-body robot">Visez l'émotion 100% Laser Game.</p>

@@ -50,7 +50,7 @@
       </WhiteCard>
     </div>
 
-    <div class="w-full flex lg:hidden relative items-center justify-center px-12">
+    <div class="w-full flex lg:hidden relative py-24 lg:py-0 items-center justify-center px-12">
       <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[150px] h-[150px] rounded-full red sm-blured-box" />
       <div class="absolute top-0 z-0 transform right-0 z-0 w-[100px] h-[100px] rounded-full blue sm-blured-box" />
       <div class="absolute top-[50%] z-0 transform left-0 z-0 w-[120px] h-[120px] rounded-full yellow sm-blured-box" />
@@ -124,7 +124,7 @@
                   onClickReservations('nice');
                 }
               "
-              className="px-6 !h-[60px] red-button"
+              className="px-6 !h-[60px] w-full md:w-auto red-button"
             />
             <button
               @click="
@@ -154,10 +154,10 @@
               text="Réserver"
               :onClick="
                 () => {
-                  onClickReservations('nice');
+                  onClickReservations('Mougins');
                 }
               "
-              className="px-6 !h-[60px] red-button"
+              className="px-6 !h-[60px] w-full md:w-auto red-button"
             />
             <button
               @click="

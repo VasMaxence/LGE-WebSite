@@ -82,7 +82,7 @@
                   onClickReservations('nice');
                 }
               "
-              className="px-6 !h-[65px] red-button"
+              className="px-6 !h-[65px] w-full md:w-auto red-button"
             />
           </div>
           <div class="py-3" />
