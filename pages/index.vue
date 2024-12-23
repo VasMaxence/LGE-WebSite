@@ -8,703 +8,184 @@
     </div>
 
     <div class="w-full h-[85vh] hidden lg:flex relative items-center justify-center">
-      <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[300px] h-[300px] rounded-full blue blured-box" />
+      <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[300px] h-[300px] rounded-full yellow blured-box" />
       <div class="relative flex flex-col items-center justify-center h-full z-[50]">
-        <!-- <h2 class="main-subtitle">Loisir 06</h2> -->
-        <h1 class="w-1/2 main-title text-center leading-[70px]">Démarrez une expérience inédite</h1>
+        <h1 class="w-1/2 main-title text-center leading-[70px]">Affrontez familles et amis chez QuizMaster:<br/>Fous rires garantis !</h1>
       </div>
     </div>
 
-    <div class="w-full h-[50vh] hidden sm:flex lg:hidden relative items-center justify-center">
-      <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[150px] h-[150px] rounded-full blue sm-blured-box" />
+    <div class="w-full h-[50vh] hidden sm:flex lg:hidden relative items-center justify-center pt-20">
+      <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[150px] h-[150px] rounded-full yellow sm-blured-box" />
       <div class="relative flex flex-row items-center justify-center h-full z-[50]">
-        <h1 class="w-2/3 sm-main-title text-center">Démarrez une expérience inédite</h1>
+        <h1 class="w-2/3 sm-main-title text-center">Affrontez familles et amis chez QuizMaster:<br/>Fous rires garantis !</h1>
       </div>
     </div>
 
-    <div class="w-full h-[50vh] flex sm:hidden relative items-center justify-center">
-      <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[150px] h-[150px] rounded-full blue sm-blured-box" />
-      <div class="absolute top-0 z-0 transform right-0 z-0 w-[100px] h-[100px] rounded-full red sm-blured-box" />
-      <div class="absolute top-[50%] z-0 transform left-0 z-0 w-[120px] h-[120px] rounded-full yellow sm-blured-box" />
+    <div class="w-full h-[65vh] flex sm:hidden relative items-center justify-center pt-20 pb-20">
+      <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[150px] h-[150px] rounded-full yellow sm-blured-box" />
+      <div class="absolute top-0 z-0 transform right-0 z-0 w-[100px] h-[100px] rounded-full blue sm-blured-box" />
+      <div class="absolute top-[50%] z-0 transform left-0 z-0 w-[120px] h-[120px] rounded-full red sm-blured-box" />
       <div class="relative flex flex-row items-center justify-center h-full z-[50]">
-        <h1 class="w-2/3 sm-main-title text-center">Démarrez une expérience inédite</h1>
+        <h1 class="w-2/3 sm-main-title text-center">Affrontez familles et amis chez QuizMaster:<br/>Fous rires garantis !</h1>
       </div>
     </div>
 
-    <!-- Principal activity -->
-    <div class="px-40 hidden xl:flex flex-col">
-      <div class="flex flex-row gap-x-10">
-        <WhiteCard class="flex flex-col flex-grow w-[30%]" data-aos="fade-up" data-aos-duration="1000">
-          <h1 class="white-title robot">Laser Game</h1>
-          <p class="white-body robot">Visez l'émotion 100% Laser Game.</p>
-          <div class="py-3 h-full" />
-          <div class="grid grid-cols-2 gap-x-8 items-center">
-            <Button
-              text="Réserver"
-              :onClick="
-                () => {
-                  onClickReservations('nice');
-                }
-              "
-              className="red-button"
-            />
-            <a href="/laser-game" class="link">En savoir plus</a>
-          </div>
-          <div class="py-4" />
-          <div class="grid grid-cols-2 gap-x-3">
-            <img alt="laser-game-img-1" src="@/static/images/LGE/1.png" class="rounded-lg" />
-            <img alt="laser-game-img-2" src="@/static/images/LGE/2.png" class="rounded-lg" />
-          </div>
-        </WhiteCard>
-        <WhiteCard class="flex flex-col flex-grow w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-          <h1 class="white-title robot">Bowling</h1>
-          <p class="white-body robot">Visez l'émotion 100% Bowling.</p>
-          <div class="py-3 h-full" />
-          <div class="grid grid-cols-2 gap-x-8 items-center">
-            <Button
-              text="Réserver"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-              className="blue-button"
-            />
-            <a href="/bowling" class="link">En savoir plus</a>
-          </div>
-          <div class="py-4" />
-          <div class="grid grid-cols-2 gap-x-3">
-            <img alt="bowling-img-1" src="@/static/images/Bowling/1.png" class="rounded-lg" />
-            <img alt="bowling-img-2" src="@/static/images/Bowling/2.png" class="rounded-lg" />
-          </div>
-        </WhiteCard>
-        <WhiteCard class="flex flex-col flex-grow w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          <h1 class="white-title robot">Quizz Master</h1>
-          <p class="white-body robot">Venez vous éclatez entre amis ou en famille.</p>
-          <div class="py-3 h-full" />
-          <div class="grid grid-cols-2 gap-x-8 items-center">
-            <Button
-              text="Réserver"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-              className="yellow-button"
-            />
-            <a href="/quizz-master" class="link">En savoir plus</a>
-          </div>
-          <div class="py-4" />
-          <div class="grid grid-cols-2 gap-x-3">
-            <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg" />
-            <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/2.png" class="rounded-lg" />
-          </div>
-        </WhiteCard>
-      </div>
+    <!-- Bowling with picture -->
 
-      <div class="py-4" />
-
-      <div class="!w-full flex flex-row justify-center gap-x-10">
-        <div class="w-[32%]">
-          <WhiteCard class="w-full flex flex-col flex-grow" data-aos="fade-up" data-aos-duration="1000">
-            <h1 class="white-title robot">Billard</h1>
-            <p class="white-body robot">Visez l'émotion 100% Billard.</p>
-            <div class="py-3 h-full" />
-            <div class="grid grid-cols-2 gap-x-8 items-center">
+    <div class="hidden xl:flex xl:px-24">
+      <div class="relative w-full items-center justify-center">
+        <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full yellow blured-box" />
+        <WhiteCard className="relative z-[50] grid grid-cols-[40%_7%_53%]">
+          <div class="w-full flex flex-col">
+            <h1 class="card-title">C'est quoi Quiz Master</h1>
+            <div class="py-3" />
+            <p class="card-body">Quiz Master, c’est l’expérience ultime pour les passionnés de quiz !</p>
+            <div class="py-1" />
+            <p class="card-body">
+              Venez vous affronter en famille, entre amis ou entre collègues dans un univers immersif inspiré des plus grands jeux télévisés. Avec des buzzers, des questions variées et des défis captivants, testez vos connaissances, stimulez votre esprit
+              de compétition et partagez des moments inoubliables. Que vous soyez amateur ou expert, QuizzMaster promet rires, émotions et surprises à chaque partie. Relevez le défi et devenez le maître du quiz !
+            </p>
+            <div class="py-3" />
+            <div class="flex flex-row gap-x-4">
               <Button
                 text="Réserver"
                 :onClick="
                   () => {
-                    onClickReservations('mougins');
+                    onClickReservations('Nice');
                   }
                 "
-                className="green-button"
+                className="px-8 yellow-button"
               />
-              <a href="/billard" class="link">En savoir plus</a>
             </div>
-            <div class="py-4" />
-            <div class="grid grid-cols-2 gap-x-3">
-              <img alt="billard-img-1" src="@/static/images/Billard/1.png" class="rounded-lg" />
-              <img alt="billard-img-2" src="@/static/images/Billard/2.png" class="rounded-lg" />
-            </div>
-          </WhiteCard>
-        </div>
-        <!-- TODO HIDE -->
-        <div class="w-[32%]">
-          <WhiteCard class="w-full flex flex-col flex-grow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <h1 class="white-title robot">Karting</h1>
-            <p class="white-body robot">Visez l'émotion 100% Karting.</p>
-            <div class="py-3 h-full" />
-            <div class="grid grid-cols-2 gap-x-8 items-center">
-              <Button text="Réserver" :onClick="() => {}" className="purple-button" />
-              <a href="/karting" class="link">En savoir plus</a>
-            </div>
-            <div class="py-4" />
-            <div class="grid grid-cols-2 gap-x-3">
-              <img alt="karting-img-1" src="@/static/images/Karting/1.png" class="rounded-lg" />
-              <img alt="karting-img-2" src="@/static/images/Karting/2.png" class="rounded-lg" />
-            </div>
-          </WhiteCard>
-        </div>
+            <div class="py-3" />
+          </div>
+          <div />
+          <div class="w-full h-full flex flex-wrap gap-x-3 gap-y-1">
+            <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg w-60 h-60 object-cover" />
+            <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/2.jpeg" class="rounded-lg w-60 h-60 object-cover" />
+            <img alt="quizz-master-img-3" src="@/static/images/QuizzMaster/3.jpeg" class="rounded-lg w-60 h-60 object-cover" />
+            <img alt="quizz-master-img-4" src="@/static/images/QuizzMaster/4.jpeg" class="rounded-lg w-60 h-60 object-cover" />
+          </div>
+        </WhiteCard>
       </div>
     </div>
 
-    <div class="px-24 hidden lg:flex xl:hidden flex-col">
-      <div class="flex flex-row gap-x-10">
-        <WhiteCard class="flex flex-col flex-grow w-[30%]">
-          <h1 class="white-title robot">Laser Game</h1>
-          <p class="white-body robot">Visez l'émotion 100% Laser Game.</p>
-          <div class="py-3 h-full" />
-          <div class="grid grid-cols-2 gap-x-8 items-center">
-            <Button
-              text="Réserver"
-              :onClick="
-                () => {
-                  onClickReservations('nice');
-                }
-              "
-              className="red-button"
-            />
-            <a href="/laser-game" class="link">En savoir plus</a>
-          </div>
-          <div class="py-4" />
-          <div class="grid grid-cols-2 gap-x-3">
-            <img alt="laser-game-img-1" src="@/static/images/LGE/1.png" class="rounded-lg" />
-            <img alt="laser-game-img-2" src="@/static/images/LGE/2.png" class="rounded-lg" />
-          </div>
-        </WhiteCard>
-        <WhiteCard class="flex flex-col flex-grow w-[30%]">
-          <h1 class="white-title robot">Bowling</h1>
-          <p class="white-body robot">Visez l'émotion 100% Bowling.</p>
-          <div class="py-3 h-full" />
-          <div class="grid grid-cols-2 gap-x-8 items-center">
-            <Button
-              text="Réserver"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-              className="blue-button"
-            />
-            <a href="/bowling" class="link">En savoir plus</a>
-          </div>
-          <div class="py-4" />
-          <div class="grid grid-cols-2 gap-x-3">
-            <img alt="bowling-img-1" src="@/static/images/Bowling/1.png" class="rounded-lg" />
-            <img alt="bowling-img-2" src="@/static/images/Bowling/2.png" class="rounded-lg" />
+    <div class="flex xl:hidden px-8 sm:px-12 lg:px-16">
+      <div class="relative w-full items-center justify-center">
+        <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full yellow blured-box" />
+        <WhiteCard className="relative z-[50] flex flex-col">
+          <h1 class="card-title">C'est quoi Quiz Master ?</h1>
+          <div class="py-3" />
+          <p class="card-body">Quiz Master, c’est l’expérience ultime pour les passionnés de quiz !</p>
+          <div class="py-1" />
+          <p class="card-body">
+            Venez vous affronter en famille, entre amis ou entre collègues dans un univers immersif inspiré des plus grands jeux télévisés. Avec des buzzers, des questions variées et des défis captivants, testez vos connaissances, stimulez votre esprit de
+            compétition et partagez des moments inoubliables. Que vous soyez amateur ou expert, QuizzMaster promet rires, émotions et surprises à chaque partie. Relevez le défi et devenez le maître du quiz !
+          </p>
+          <div class="py-3" />
+          <div class="w-full h-full flex flex-wrap items-center justify-center gap-x-3 gap-y-3">
+            <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg w-60 h-60 object-cover" />
+            <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/3.jpeg" class="rounded-lg w-60 h-60 object-cover" />
+            <img alt="quizz-master-img-3" src="@/static/images/QuizzMaster/4.jpeg" class="rounded-lg w-60 h-60 object-cover" />
           </div>
         </WhiteCard>
       </div>
-
-      <div class="py-4" />
-
-      <div class="flex flex-row gap-x-10">
-        <WhiteCard class="flex-1 flex flex-col flex-grow">
-          <h1 class="white-title robot">Quizz Master</h1>
-          <p class="white-body robot">Venez vous éclatez entre amis ou en famille.</p>
-          <div class="py-3 h-full" />
-          <div class="grid grid-cols-2 gap-x-8 items-center">
-            <Button
-              text="Réserver"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-              className="yellow-button"
-            />
-            <a href="/quizz-master" class="link">En savoir plus</a>
-          </div>
-          <div class="py-4" />
-          <div class="grid grid-cols-2 gap-x-3">
-            <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg" />
-            <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/2.png" class="rounded-lg" />
-          </div>
-        </WhiteCard>
-        <WhiteCard class="flex-1 flex flex-col flex-grow">
-          <h1 class="white-title robot">Billard</h1>
-          <p class="white-body robot">Visez l'émotion 100% Billard.</p>
-          <div class="py-3 h-full" />
-          <div class="grid grid-cols-2 gap-x-8 items-center">
-            <Button
-              text="Réserver"
-              :onClick="
-                () => {
-                  $;
-                  onClickReservations('mougins');
-                }
-              "
-              className="green-button"
-            />
-            <a href="/billard" class="link">En savoir plus</a>
-          </div>
-          <div class="py-4" />
-          <div class="grid grid-cols-2 gap-x-3">
-            <img alt="billard-img-1" src="@/static/images/Billard/1.png" class="rounded-lg" />
-            <img alt="billard-img-2" src="@/static/images/Billard/2.png" class="rounded-lg" />
-          </div>
-        </WhiteCard>
-      </div>
-
-      <div class="py-4" />
-
-      <!-- TODO HIDE -->
-      <div class="!w-full flex flex-row justify-center gap-x-10">
-        <div class="w-[50%]">
-          <WhiteCard class="w-full flex flex-col flex-grow">
-            <h1 class="white-title robot">Karting</h1>
-            <p class="white-body robot">Visez l'émotion 100% Karting.</p>
-            <div class="py-3 h-full" />
-            <div class="grid grid-cols-2 gap-x-8 items-center">
-              <Button text="Réserver" :onClick="() => {}" className="purple-button" />
-              <a href="/karting" class="link">En savoir plus</a>
-            </div>
-            <div class="py-4" />
-            <div class="grid grid-cols-2 gap-x-3">
-              <img alt="karting-img-1" src="@/static/images/Karting/1.png" class="rounded-lg" />
-              <img alt="karting-img-2" src="@/static/images/Karting/2.png" class="rounded-lg" />
-            </div>
-          </WhiteCard>
-        </div>
-      </div>
-    </div>
-
-    <div class="px-8 flex lg:hidden flex-col gap-y-8">
-      <WhiteCard class="w-full flex flex-col flex-grow">
-        <h1 class="white-title robot">Laser Game</h1>
-        <p class="white-body robot">Visez l'émotion 100% Laser Game.</p>
-        <div class="py-3 h-full" />
-        <div class="grid grid-cols-2 gap-x-8 items-center">
-          <Button
-            text="Réserver"
-            :onClick="
-              () => {
-                onClickReservations('nice');
-              }
-            "
-            className="red-button"
-          />
-          <a href="/laser-game" class="link">En savoir plus</a>
-        </div>
-        <div class="py-4" />
-        <div class="grid grid-cols-2 gap-x-3">
-          <img alt="laser-game-img-1" src="@/static/images/LGE/1.png" class="rounded-lg" />
-          <img alt="laser-game-img-2" src="@/static/images/LGE/2.png" class="rounded-lg" />
-        </div>
-      </WhiteCard>
-      <WhiteCard class="w-full flex flex-col flex-grow">
-        <h1 class="white-title robot">Bowling</h1>
-        <p class="white-body robot">Visez l'émotion 100% Bowling.</p>
-        <div class="py-3 h-full" />
-        <div class="grid grid-cols-2 gap-x-8 items-center">
-          <Button
-            text="Réserver"
-            :onClick="
-              () => {
-                onClickReservations('mougins');
-              }
-            "
-            className="blue-button"
-          />
-          <a href="/bowling" class="link">En savoir plus</a>
-        </div>
-        <div class="py-4" />
-        <div class="grid grid-cols-2 gap-x-3">
-          <img alt="bowling-img-1" src="@/static/images/Bowling/1.png" class="rounded-lg" />
-          <img alt="bowling-img-2" src="@/static/images/Bowling/2.png" class="rounded-lg" />
-        </div>
-      </WhiteCard>
-
-      <WhiteCard class="w-full flex flex-col flex-grow">
-        <h1 class="white-title robot">Quizz Master</h1>
-        <p class="white-body robot">Venez vous éclatez entre amis ou en famille.</p>
-        <div class="py-3 h-full" />
-        <div class="grid grid-cols-2 gap-x-8 items-center">
-          <Button
-            text="Réserver"
-            :onClick="
-              () => {
-                onClickReservations('mougins');
-              }
-            "
-            className="yellow-button"
-          />
-          <a href="/quizz-master" class="link">En savoir plus</a>
-        </div>
-        <div class="py-4" />
-        <div class="grid grid-cols-2 gap-x-3">
-          <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg" />
-          <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/2.png" class="rounded-lg" />
-        </div>
-      </WhiteCard>
-      <WhiteCard class="w-full flex flex-col flex-grow">
-        <h1 class="white-title robot">Billard</h1>
-        <p class="white-body robot">Visez l'émotion 100% Billard.</p>
-        <div class="py-3 h-full" />
-        <div class="grid grid-cols-2 gap-x-8 items-center">
-          <Button
-            text="Réserver"
-            :onClick="
-              () => {
-                onClickReservations('mougins');
-              }
-            "
-            className="green-button"
-          />
-          <a href="/billard" class="link">En savoir plus</a>
-        </div>
-        <div class="py-4" />
-        <div class="grid grid-cols-2 gap-x-3">
-          <img alt="billard-img-1" src="@/static/images/Billard/1.png" class="rounded-lg" />
-          <img alt="billard-img-2" src="@/static/images/Billard/2.png" class="rounded-lg" />
-        </div>
-      </WhiteCard>
-
-      <!-- TODO HIDE -->
-      <WhiteCard class="w-full flex flex-col flex-grow">
-        <h1 class="white-title robot">Karting</h1>
-        <p class="white-body robot">Visez l'émotion 100% Karting.</p>
-        <div class="py-3 h-full" />
-        <div class="grid grid-cols-2 gap-x-8 items-center">
-          <Button text="Réserver" :onClick="() => {}" className="purple-button" />
-          <a href="/karting" class="link">En savoir plus</a>
-        </div>
-        <div class="py-4" />
-        <div class="grid grid-cols-2 gap-x-3">
-          <img alt="karting-img-1" src="@/static/images/Karting/1.png" class="rounded-lg" />
-          <img alt="karting-img-2" src="@/static/images/Karting/2.png" class="rounded-lg" />
-        </div>
-      </WhiteCard>
     </div>
 
     <div class="py-12 sm:py-16 xl:py-28" />
 
     <Separator>
       <div class="flex flex-col items-center gap-y-2">
-        <h1 class="section-title text-center">Faites le plein d’aventure</h1>
-        <p class="section-body text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies. Nunc nec auctor purus. Pellentesque gravida magna
-          vestibulum, aliquet metus rhoncus, finibus ligula. Pellentesque imperdiet dapibus odio.
-        </p>
+        <h1 class="section-title text-center">Qui peut jouer ?</h1>
+        <p class="section-body text-center">Quiz Master c'est pour tout le monde, de 5 ans à 90 ans. Affrontez vous en famille ou entre amis jsuqu'à 12 joueurs !</p>
+        <div class="py-1" />
+        <div class="flex items-center justify-center gap-x-4">
+          <Button
+            text="Réserver"
+            :onClick="
+              () => {
+                onClickReservations('Nice');
+              }
+            "
+            className="px-12 yellow-button"
+          />
+        </div>
+      </div>
+    </Separator>
+
+    <div class="py-12 sm:py-16 xl:py-28" />
+
+    <Separator>
+      <div class="flex flex-col items-center gap-y-2">
+        <h1 class="section-title text-center">Nos tarifs</h1>
       </div>
     </Separator>
 
     <div class="py-12 sm:py-16" />
 
-    <!-- LGE -->
-    <div class="hidden xl:flex xl:px-24" data-aos="fade-right" data-aos-duration="500">
-      <div class="relative w-full items-center justify-center">
-        <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full red blured-box" />
-        <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
-          <div class="flex flex-col">
-            <h1 class="card-title">Laser Game Évolution</h1>
-            <div class="py-3" />
-            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
-            <div class="py-3" />
-            <router-link to="/laser-game">
-              <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
-            </router-link>
-            <div class="py-8" />
-            <div class="flex flex-wrap gap-x-3 gap-y-3">
-              <img alt="laser-game-img-1" src="@/static/images/LGE/1.png" class="rounded-lg" />
-              <img alt="laser-game-img-2" src="@/static/images/LGE/2.png" class="rounded-lg" />
-              <img alt="laser-game-img-3" src="@/static/images/LGE/3.png" class="rounded-lg" />
-              <!-- <img alt="laser-game-img-4" src="@/static/images/LGE/4.png" class="rounded-lg" /> -->
-            </div>
-          </div>
-          <div class="h-full flex flex-col">
-            <h3 class="card-subtitle">Nos centres</h3>
-            <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
-              <CenterCard
-                title="Laser Game Évolution"
-                subtitle="Pathé lingostière, 06200 Nice"
-                buttonClassName="red-button"
-                :onClick="
-                  () => {
-                    onClickReservations('nice');
-                  }
-                "
-              />
-              <CenterCard
-                title="Laser Game / Bowling"
-                subtitle="Mougins"
-                buttonClassName="red-button"
-                :onClick="
-                  () => {
-                    onClickReservations('mougins');
-                  }
-                "
-              />
-            </div>
-          </div>
+    <div class="px-12 md:px-24 xl:px-40">
+      <div class="w-full flex flex-wrap gap-x-3 gap-y-3">
+        <WhiteCard class="w-full md:!w-[310px] flex flex-col">
+          <div class="text-white text-5xl font-bold">12 € / personne</div>
+          <div class="py-2" />
+          <div class="divider w-full" />
+          <div class="py-2" />
+          <p class="h-full card-light-body">La partie de 4 manches</p>
+          <div class="py-2" />
+          <Button
+            text="Réserver"
+            :onClick="
+              () => {
+                onClickReservations('Nice');
+              }
+            "
+            className="px-12 yellow-button !h-[45px]"
+          />
         </WhiteCard>
-      </div>
-    </div>
-
-    <div class="flex xl:hidden px-8 sm:px-12 lg:px-16">
-      <div class="relative w-full items-center justify-center">
-        <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full red blured-box" />
-        <WhiteCard className="relative z-[50] flex flex-col">
-          <h1 class="card-title">Laser Game Évolution</h1>
-          <div class="py-3" />
-          <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
-          <div class="py-3" />
-          <router-link to="/laser-game">
-            <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
+        <WhiteCard class="w-full md:!w-[310px] flex flex-col">
+          <div class="text-white text-5xl font-bold">18 € / personne</div>
+          <div class="py-2" />
+          <div class="divider w-full" />
+          <div class="py-2" />
+          <p class="h-full card-light-body">La partie de 9 manches</p>
+          <div class="py-2" />
+          <Button
+            text="Réserver"
+            :onClick="
+              () => {
+                onClickReservations('Nice');
+              }
+            "
+            className="px-12 yellow-button !h-[45px]"
+          />
+        </WhiteCard>
+        <WhiteCard class="w-full md:!w-[310px] flex flex-col">
+          <div class="text-white text-5xl font-bold">12 € / personne</div>
+          <div class="py-2" />
+          <div class="divider w-full" />
+          <div class="py-2" />
+          <p class="h-full card-light-body">La partie de 4 manches sur le thème du mois</p>
+          <div class="py-2" />
+          <Button
+            text="Réserver"
+            :onClick="
+              () => {
+                onClickReservations('Nice');
+              }
+            "
+            className="px-12 yellow-button !h-[45px]"
+          />
+        </WhiteCard>
+        <WhiteCard class="w-full md:!w-[310px] flex flex-col">
+          <div class="text-white text-5xl font-bold">Sur devis</div>
+          <div class="py-2" />
+          <div class="divider w-full" />
+          <div class="py-2" />
+          <p class="h-full card-light-body">Vous êtes une entreprise ou une association ? Demandez un tarif sur mesure.</p>
+          <div class="py-2" />
+          <router-link class="w-full" to="/contact">
+            <Button text="Contact" :onClick="() => {}" className="w-full px-12 yellow-button !h-[45px]" />
           </router-link>
-          <div class="py-4" />
-          <h3 class="card-subtitle">Nos centres</h3>
-          <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
-            <CenterCard
-              title="Laser Game Évolution"
-              subtitle="Pathé lingostière, 06200 Nice"
-              buttonClassName="red-button"
-              :onClick="
-                () => {
-                  onClickReservations('nice');
-                }
-              "
-            />
-            <CenterCard
-              title="Laser Game / Bowling"
-              subtitle="Mougins"
-              buttonClassName="red-button"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-            />
-          </div>
-          <div class="py-4" />
-          <div class="flex flex-wrap gap-x-3 gap-y-3">
-            <img alt="laser-game-img-1" src="@/static/images/LGE/1.png" class="rounded-lg" />
-            <img alt="laser-game-img-2" src="@/static/images/LGE/2.png" class="rounded-lg" />
-            <img alt="laser-game-img-3" src="@/static/images/LGE/3.png" class="rounded-lg" />
-          </div>
-        </WhiteCard>
-      </div>
-    </div>
-
-    <div class="py-4 lg:py-8" />
-
-    <!-- Bowling -->
-    <div class="hidden xl:flex xl:px-24" data-aos="fade-left" data-aos-duration="500">
-      <div class="relative w-full items-center justify-center">
-        <div class="absolute top-1/2 transform -translate-y-1/2 right-[-300px] z-0 w-[400px] h-[400px] rounded-full blue blured-box" />
-        <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
-          <div class="flex flex-col">
-            <h1 class="card-title">Bowling</h1>
-            <div class="py-3" />
-            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
-            <div class="py-3" />
-            <router-link to="/bowling">
-              <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
-            </router-link>
-            <div class="py-8" />
-            <div class="flex flex-wrap gap-x-3 gap-y-3">
-              <img alt="bowling-img-1" src="@/static/images/Bowling/1.png" class="rounded-lg" />
-              <img alt="bowling-img-2" src="@/static/images/Bowling/2.png" class="rounded-lg" />
-            </div>
-          </div>
-          <div class="h-full flex flex-col">
-            <h3 class="card-subtitle">Nos centres</h3>
-            <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
-              <CenterCard
-                title="Laser Game / Bowling"
-                subtitle="Mougins"
-                buttonClassName="blue-button"
-                :onClick="
-                  () => {
-                    onClickReservations('mougins');
-                  }
-                "
-              />
-            </div>
-          </div>
-        </WhiteCard>
-      </div>
-    </div>
-
-    <div class="flex xl:hidden px-8 sm:px-12 lg:px-16">
-      <div class="relative w-full items-center justify-center">
-        <div class="absolute top-1/2 transform -translate-y-1/2 right-[-300px] z-0 w-[400px] h-[400px] rounded-full blue blured-box" />
-        <WhiteCard className="relative z-[50] flex flex-col">
-          <h1 class="card-title">Bowling</h1>
-          <div class="py-3" />
-          <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
-          <div class="py-3" />
-          <router-link to="/bowling">
-            <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
-          </router-link>
-          <div class="py-4" />
-          <h3 class="card-subtitle">Nos centres</h3>
-          <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
-            <CenterCard
-              title="Laser Game / Bowling"
-              subtitle="Mougins"
-              buttonClassName="blue-button"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-            />
-          </div>
-          <div class="py-4" />
-          <div class="flex flex-wrap gap-x-3 gap-y-3">
-            <img alt="bowling-img-1" src="@/static/images/Bowling/1.png" class="rounded-lg" />
-            <img alt="bowling-img-2" src="@/static/images/Bowling/2.png" class="rounded-lg" />
-          </div>
-        </WhiteCard>
-      </div>
-    </div>
-
-    <div class="py-4 lg:py-8" />
-
-    <!-- Quizz Master -->
-    <div class="hidden xl:flex xl:px-24" data-aos="fade-right" data-aos-duration="500">
-      <div class="relative w-full items-center justify-center">
-        <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full yellow blured-box" />
-        <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
-          <div class="flex flex-col">
-            <h1 class="card-title">Quizz Master</h1>
-            <div class="py-3" />
-            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
-            <div class="py-3" />
-            <router-link to="/quizz-master">
-              <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
-            </router-link>
-            <div class="py-8" />
-            <div class="flex flex-wrap gap-x-3 gap-y-3">
-              <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg" />
-              <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/2.png" class="rounded-lg" />
-            </div>
-          </div>
-          <div class="h-full flex flex-col">
-            <h3 class="card-subtitle">Nos centres</h3>
-            <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
-              <CenterCard
-                title="Laser Game / Bowling"
-                subtitle="Mougins"
-                buttonClassName="yellow-button"
-                :onClick="
-                  () => {
-                    onClickReservations('mougins');
-                  }
-                "
-              />
-            </div>
-          </div>
-        </WhiteCard>
-      </div>
-    </div>
-
-    <div class="flex xl:hidden px-8 sm:px-12 lg:px-16">
-      <div class="relative w-full items-center justify-center">
-        <div class="absolute top-1/2 transform -translate-y-1/2 left-[-300px] z-0 w-[400px] h-[400px] rounded-full yellow blured-box" />
-        <WhiteCard className="relative z-[50] flex flex-col">
-          <h1 class="card-title">Quizz Master</h1>
-          <div class="py-3" />
-          <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
-          <div class="py-3" />
-          <router-link to="/quizz-master">
-            <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
-          </router-link>
-          <div class="py-4" />
-          <h3 class="card-subtitle">Nos centres</h3>
-          <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
-            <CenterCard
-              title="Laser Game / Bowling"
-              subtitle="Mougins"
-              buttonClassName="yellow-button"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-            />
-          </div>
-          <div class="py-4" />
-          <div class="flex flex-wrap gap-x-3 gap-y-3">
-            <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg" />
-            <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/2.png" class="rounded-lg" />
-          </div>
-        </WhiteCard>
-      </div>
-    </div>
-
-    <div class="py-4 lg:py-8" />
-
-    <!-- Billard -->
-    <div class="hidden xl:flex xl:px-24" data-aos="fade-left" data-aos-duration="500">
-      <div class="relative w-full items-center justify-center">
-        <div class="absolute top-1/2 transform -translate-y-1/2 right-[-300px] z-0 w-[400px] h-[400px] rounded-full green blured-box" />
-        <WhiteCard className="relative z-[50] grid grid-cols-2 gap-x-40">
-          <div class="flex flex-col">
-            <h1 class="card-title">Billard</h1>
-            <div class="py-3" />
-            <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
-            <div class="py-3" />
-            <router-link to="/billard">
-              <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
-            </router-link>
-            <div class="py-8" />
-            <div class="flex flex-wrap gap-x-3 gap-y-3">
-              <img alt="billard-img-1" src="@/static/images/Billard/1.png" class="rounded-lg" />
-              <img alt="billard-img-2" src="@/static/images/Billard/2.png" class="rounded-lg" />
-            </div>
-          </div>
-          <div class="h-full flex flex-col">
-            <h3 class="card-subtitle">Nos centres</h3>
-            <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
-              <CenterCard
-                title="Laser Game / Bowling"
-                subtitle="Mougins"
-                buttonClassName="green-button"
-                :onClick="
-                  () => {
-                    onClickReservations('mougins');
-                  }
-                "
-              />
-            </div>
-          </div>
-        </WhiteCard>
-      </div>
-    </div>
-
-    <div class="flex xl:hidden px-8 sm:px-12 lg:px-16">
-      <div class="relative w-full items-center justify-center">
-        <div class="absolute top-1/2 transform -translate-y-1/2 right-[-300px] z-0 w-[400px] h-[400px] rounded-full green blured-box" />
-        <WhiteCard className="relative z-[50] flex flex-col">
-          <h1 class="card-title">Billard</h1>
-          <div class="py-3" />
-          <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt. Sed non volutpat lectus, non lacinia leo. Nunc vel nulla velit. Nullam congue vehicula ultricies.</p>
-          <div class="py-3" />
-          <router-link to="/billard">
-            <Button text="En savoir plus sur l'activité" :onClick="() => {}" className="!w-fit px-10 white-button" />
-          </router-link>
-          <div class="py-4" />
-          <h3 class="card-subtitle">Nos centres</h3>
-          <div class="flex-1 flex flex-col items-center justify-center gap-y-3">
-            <CenterCard
-              title="Laser Game / Bowling"
-              subtitle="Mougins"
-              buttonClassName="green-button"
-              :onClick="
-                () => {
-                  onClickReservations('mougins');
-                }
-              "
-            />
-          </div>
-          <div class="py-4" />
-          <div class="flex flex-wrap gap-x-3 gap-y-3">
-            <img alt="billard-img-1" src="@/static/images/Billard/1.png" class="rounded-lg" />
-            <img alt="billard-img-2" src="@/static/images/Billard/2.png" class="rounded-lg" />
-          </div>
         </WhiteCard>
       </div>
     </div>
@@ -713,8 +194,8 @@
 
     <Separator>
       <div class="flex flex-col items-center gap-y-2">
-        <h1 class="section-title text-center">Nos Événements</h1>
-        <p class="section-body text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta nibh a bibendum tincidunt.</p>
+        <h1 class="section-title text-center">Nos thèmes du moment</h1>
+        <p class="section-body text-center">Quiz Master vous propose des thèmes variés pour des parties toujours plus fun et originales. Découvrez nos thèmes du moment et choisissez celui qui vous correspond !</p>
       </div>
     </Separator>
 
@@ -723,46 +204,75 @@
     <div class="px-12 md:px-24 xl:px-40">
       <div class="w-full flex flex-wrap gap-x-3 gap-y-3">
         <WhiteCard class="w-full md:!w-[310px] flex flex-col justify-center">
-          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
+          <img alt="event-img-1" src="@/static/images/Events/netflix_december.png" class="rounded-lg" />
           <div class="py-2" />
-          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
+          <h1 class="card-subtitle leading-7">Série Netflix</h1>
           <div class="py-1" />
-          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
+          <p class="card-light-body">Pendant le mois de décembre, venez tester notre Quiz de 4 manches sur les séries Netflix.</p>
+        </WhiteCard>
+      </div>
+    </div>
+
+    <div class="py-12 sm:py-16 xl:py-28" />
+
+    <Separator>
+      <div class="flex flex-col items-center gap-y-2">
+        <h1 class="section-title text-center">Nos Centres</h1>
+      </div>
+    </Separator>
+
+    <div class="py-12 sm:py-16" />
+
+    <div class="px-12 md:px-24 xl:px-40">
+      <div class="w-full flex flex-wrap gap-x-3 gap-y-3">
+        <WhiteCard class="w-full md:!w-[310px] flex flex-col justify-center">
+          <div class="w-full !h-[200px]">
+            <img alt="event-img-1" src="@/static/images/LGE/quiz_mougins.jpeg" class="w-full rounded-lg object-cover !h-[200px]" />
+          </div>
+          <div class="py-2" />
+          <h1 class="card-subtitle leading-7">Mougins</h1>
+          <div class="py-1" />
+          <p class="card-light-body h-full">Situé dans le Laser Game Bowling de Mougins.<br />561 Rte de la Roquette, 06250 Mougins<br />04 92 28 16 53</p>
+          <div class="py-2" />
+          <div class="flex flex-row gap-x-3">
+            <Button
+              text="Réserver"
+              :onClick="
+                () => {
+                  onClickReservations('Mougins');
+                }
+              "
+              className="w-full px-6 !h-[60px] yellow-button"
+            />
+          </div>
         </WhiteCard>
         <WhiteCard class="w-full md:!w-[310px] flex flex-col justify-center">
-          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
+          <div class="w-full !h-[200px]">
+            <img alt="event-img-2" src="@/static/images/LGE/quiz_nice.jpeg" class="w-full rounded-lg object-cover !h-[200px]" />
+          </div>
           <div class="py-2" />
-          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
+          <h1 class="card-subtitle leading-7">Nice Lingostière</h1>
           <div class="py-1" />
-          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
-        </WhiteCard>
-        <WhiteCard class="hidden md:flex w-full md:!w-[310px] flex flex-col justify-center">
-          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
+          <p class="card-light-body h-full">Juste à côté du Cinéma Pathé Lingostière, vous trouverez nos 3 salles de Quiz Master.<br />604 Bd du Mercantour, 06200 Nice<br />04 23 32 01 55</p>
           <div class="py-2" />
-          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
-          <div class="py-1" />
-          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
-        </WhiteCard>
-        <WhiteCard class="hidden md:flex w-full md:!w-[310px] flex-col justify-center">
-          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
-          <div class="py-2" />
-          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
-          <div class="py-1" />
-          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
-        </WhiteCard>
-        <WhiteCard class="hidden md:flex w-full md:!w-[310px] flex flex-col justify-center">
-          <img alt="event-img-1" src="@/static/images/Events/1.png" class="rounded-lg" />
-          <div class="py-2" />
-          <h1 class="card-subtitle leading-7">Soirée Exemple</h1>
-          <div class="py-1" />
-          <p class="card-light-body">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum, Lorem Ipsum,</p>
+          <div class="flex flex-row gap-x-3">
+            <Button
+              text="Réserver"
+              :onClick="
+                () => {
+                  onClickReservations('Nice');
+                }
+              "
+              className="w-full px-6 !h-[60px] yellow-button"
+            />
+          </div>
         </WhiteCard>
       </div>
     </div>
 
     <div class="py-20" />
 
-    <Footer />
+    <Footer blurColorClassName="yellow-important" />
   </div>
 </template>
 
@@ -770,11 +280,11 @@
 import Button from "@/components/button/Button.vue";
 import WhiteCard from "~/components/card/WhiteCard.vue";
 import Separator from "~/components/separator.vue";
-import CenterCard from "~/components/card/CenterCard.vue";
 import Footer from "~/components/Footer.vue";
 import Navbar from "~/components/navbar.vue";
 
 const onClickReservations = (center) => {
+  //TODO
   if (center == "Mougins") {
     window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=141", "_blank");
   } else {
