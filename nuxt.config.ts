@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxtjs/i18n", "@nuxtjs/tailwindcss", "nuxt-aos"],
   css: ["@/static/sass/_variables.scss", "@/static/sass/_fonts.scss", "@/static/sass/main.scss"],
   components: true,
-  
+
   plugins: [
     { src: "~/plugins/toast.js", mode: "client" },
     { src: "~/plugins/aos.js", ssr: false, mode: "client" },
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       title: "Quiz Master",
-      link: [],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 
       meta: [
         { hid: "description", name: "description", content: "Découvrez Quiz Master, vos salles de Quiz pour vous amusez en famille ou entre amis." },
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         { property: "og:type", content: "website" },
         { property: "og:title", content: "Quiz Master" },
         { property: "og:description", content: "Découvrez Quiz Master, vos salles de Quiz pour vous amusez en famille ou entre amis." },
-        { property: "og:image", content: "/icon.png" },
+        { property: "og:image", content: "/web-app-manifest-512x512" },
         { property: "og:url", content: "https://google.com" },
         { property: "og:site_name", content: "Quiz Master" },
         { property: "og:locale", content: "fr_FR" }, // Added og:locale
@@ -38,7 +38,7 @@ export default defineNuxtConfig({
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: "Quiz Master" },
         { name: "twitter:description", content: "Découvrez Quiz Master, vos salles de Quiz pour vous amusez en famille ou entre amis." },
-        { name: "twitter:image", content: "/icon.png" },
+        { name: "twitter:image", content: "/web-app-manifest-512x512" },
         { name: "twitter:site", content: "@Loisir06" },
         { name: "twitter:creator", content: "@Loisir06" },
       ],

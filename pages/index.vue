@@ -10,14 +10,14 @@
     <div class="w-full h-[85vh] hidden lg:flex relative items-center justify-center">
       <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[300px] h-[300px] rounded-full yellow blured-box" />
       <div class="relative flex flex-col items-center justify-center h-full z-[50]">
-        <h1 class="w-1/2 main-title text-center leading-[70px]">Affrontez familles et amis chez QuizMaster:<br/>Fous rires garantis !</h1>
+        <h1 class="w-1/2 main-title text-center leading-[70px]">Affrontez familles et amis chez QuizMaster:<br />Fous rires garantis !</h1>
       </div>
     </div>
 
     <div class="w-full h-[50vh] hidden sm:flex lg:hidden relative items-center justify-center pt-20">
       <div class="absolute top-[50%] z-0 transform right-1/2 translate-x-1/2 -translate-y-1/2 z-0 w-[150px] h-[150px] rounded-full yellow sm-blured-box" />
       <div class="relative flex flex-row items-center justify-center h-full z-[50]">
-        <h1 class="w-2/3 sm-main-title text-center">Affrontez familles et amis chez QuizMaster:<br/>Fous rires garantis !</h1>
+        <h1 class="w-2/3 sm-main-title text-center">Affrontez familles et amis chez QuizMaster:<br />Fous rires garantis !</h1>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
       <div class="absolute top-0 z-0 transform right-0 z-0 w-[100px] h-[100px] rounded-full blue sm-blured-box" />
       <div class="absolute top-[50%] z-0 transform left-0 z-0 w-[120px] h-[120px] rounded-full red sm-blured-box" />
       <div class="relative flex flex-row items-center justify-center h-full z-[50]">
-        <h1 class="w-2/3 sm-main-title text-center">Affrontez familles et amis chez QuizMaster:<br/>Fous rires garantis !</h1>
+        <h1 class="w-2/3 sm-main-title text-center">Affrontez familles et amis chez QuizMaster:<br />Fous rires garantis !</h1>
       </div>
     </div>
 
@@ -61,10 +61,10 @@
           </div>
           <div />
           <div class="w-full h-full flex flex-wrap gap-x-3 gap-y-1">
-            <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg w-60 h-60 object-cover" />
-            <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/2.jpeg" class="rounded-lg w-60 h-60 object-cover" />
-            <img alt="quizz-master-img-3" src="@/static/images/QuizzMaster/3.jpeg" class="rounded-lg w-60 h-60 object-cover" />
-            <img alt="quizz-master-img-4" src="@/static/images/QuizzMaster/4.jpeg" class="rounded-lg w-60 h-60 object-cover" />
+            <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg w-60 h-60 object-cover" @click="isOpen = true" />
+            <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/2.jpeg" class="rounded-lg w-60 h-60 object-cover" @click="isOpen2 = true" />
+            <img alt="quizz-master-img-3" src="@/static/images/QuizzMaster/3.jpeg" class="rounded-lg w-60 h-60 object-cover" @click="isOpen3 = true" />
+            <img alt="quizz-master-img-4" src="@/static/images/QuizzMaster/4.jpeg" class="rounded-lg w-60 h-60 object-cover" @click="isOpen4 = true" />
           </div>
         </WhiteCard>
       </div>
@@ -84,9 +84,9 @@
           </p>
           <div class="py-3" />
           <div class="w-full h-full flex flex-wrap items-center justify-center gap-x-3 gap-y-3">
-            <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg w-60 h-60 object-cover" />
-            <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/3.jpeg" class="rounded-lg w-60 h-60 object-cover" />
-            <img alt="quizz-master-img-3" src="@/static/images/QuizzMaster/4.jpeg" class="rounded-lg w-60 h-60 object-cover" />
+            <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg w-60 h-60 object-cover" @click="isOpen = true" />
+            <img alt="quizz-master-img-2" src="@/static/images/QuizzMaster/3.jpeg" class="rounded-lg w-60 h-60 object-cover" @click="isOpen2 = true" />
+            <img alt="quizz-master-img-3" src="@/static/images/QuizzMaster/4.jpeg" class="rounded-lg w-60 h-60 object-cover" @click="isOpen3 = true" />
           </div>
         </WhiteCard>
       </div>
@@ -274,6 +274,30 @@
 
     <Footer blurColorClassName="yellow-important" />
   </div>
+
+  <div v-show="isOpen" class="modal-overlay w-full flex justify-center items-center" @click="isOpen = false">
+    <div class="w-2/3 relative" @click="$event.stopPropagation()">
+      <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/1.png" class="rounded-lg w-full object-cover" />
+    </div>
+  </div>
+  
+  <div v-show="isOpen2" class="modal-overlay w-full flex justify-center items-center" @click="isOpen2 = false">
+    <div class="w-2/3 relative" @click="$event.stopPropagation()">
+      <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/2.jpeg" class="rounded-lg w-full object-cover" />
+    </div>
+  </div>
+  
+  <div v-show="isOpen3" class="modal-overlay w-full flex justify-center items-center" @click="isOpen3 = false">
+    <div class="w-2/3 relative" @click="$event.stopPropagation()">
+      <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/3.jpeg" class="rounded-lg w-full object-cover" />
+    </div>
+  </div>
+  
+  <div v-show="isOpen4" class="modal-overlay w-full flex justify-center items-center" @click="isOpen4 = false">
+    <div class="w-2/3 relative" @click="$event.stopPropagation()">
+      <img alt="quizz-master-img-1" src="@/static/images/QuizzMaster/4.jpeg" class="rounded-lg w-full object-cover" />
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -283,12 +307,30 @@ import Separator from "~/components/separator.vue";
 import Footer from "~/components/Footer.vue";
 import Navbar from "~/components/navbar.vue";
 
+const isOpen = ref(false);
+const isOpen2 = ref(false);
+const isOpen3 = ref(false);
+const isOpen4 = ref(false);
+
 const onClickReservations = (center) => {
-  //TODO
   if (center == "Mougins") {
     window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=141", "_blank");
   } else {
-    window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=33", "_blank");
+    window.open("https://lasergame-evolution.resasoft.fr/FR/Reservation-v2.awp?P1=33&P2=1748804030303305730", "_blank");
   }
 };
 </script>
+
+<style scoped>
+.modal-overlay {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000000da;
+}
+</style>
