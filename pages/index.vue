@@ -126,7 +126,7 @@
     <div class="px-12 md:px-24 xl:px-40">
       <div class="w-full flex flex-wrap gap-x-3 gap-y-3">
         <WhiteCard class="w-full md:!w-[310px] flex flex-col">
-          <div class="text-white text-5xl font-bold">12 € / personne</div>
+          <div class="text-white text-5xl font-bold">15 € / personne</div>
           <div class="py-2" />
           <div class="divider w-full" />
           <div class="py-2" />
@@ -143,7 +143,7 @@
           />
         </WhiteCard>
         <WhiteCard class="w-full md:!w-[310px] flex flex-col">
-          <div class="text-white text-5xl font-bold">18 € / personne</div>
+          <div class="text-white text-5xl font-bold">22 € / personne</div>
           <div class="py-2" />
           <div class="divider w-full" />
           <div class="py-2" />
@@ -160,7 +160,7 @@
           />
         </WhiteCard>
         <WhiteCard class="w-full md:!w-[310px] flex flex-col">
-          <div class="text-white text-5xl font-bold">12 € / personne</div>
+          <div class="text-white text-5xl font-bold">15 € / personne</div>
           <div class="py-2" />
           <div class="divider w-full" />
           <div class="py-2" />
