@@ -316,7 +316,7 @@ const onClickReservations = (center) => {
   if (center == "Mougins") {
     window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=141", "_blank");
   } else {
-    window.open("https://lasergame-evolution.resasoft.fr/FR/Reservation-v2.awp?P1=33&P2=1748804030303305730", "_blank");
+    window.open("https://quizmaster-nice.resasoft.fr/FR/Reservation-v2.awp?P1=QM1", "_blank");
   }
 };
 </script>
