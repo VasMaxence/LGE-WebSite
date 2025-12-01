@@ -2,7 +2,7 @@ import '@once-ui-system/core/css/styles.css';
 import '@once-ui-system/core/css/tokens.css';
 
 import "./globals.scss";
-import { Column, DataThemeProvider, IconProvider, LayoutProvider, ThemeProvider, ToastProvider } from "@once-ui-system/core";
+import { DataThemeProvider, IconProvider, LayoutProvider, ThemeProvider, ToastProvider } from "@once-ui-system/core";
 import localFont from "next/font/local";
 
 const myFont = localFont({
@@ -42,8 +42,7 @@ interface RootLayoutProps {
 export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <Column
-        as="html"
+      <html
         lang="fr"
         suppressHydrationWarning
         className={myFont.className}
@@ -99,15 +98,15 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             <DataThemeProvider>
               <ToastProvider>
                 <IconProvider>
-                  <Column as="body" fillWidth margin="0" padding="0" style={{ height: "100vh" }}>
+                  <body style={{ height: "100vh", width: "100%", margin: 0, padding: 0 }}>
                     {children}
-                  </Column>
+                  </body>
                 </IconProvider>
               </ToastProvider>
             </DataThemeProvider>
           </ThemeProvider>
         </LayoutProvider>
-      </Column>
+      </html>
     </>
   );
 }

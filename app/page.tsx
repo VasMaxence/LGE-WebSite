@@ -27,7 +27,6 @@ import ReviewCard from "./components/ReviewCard";
 import { Carousel } from "@once-ui-system/core";
 
 export default function Home() {
-
   return (
     <div className="w-full">
       {/* Main Section */}
