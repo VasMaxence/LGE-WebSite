@@ -4,6 +4,179 @@ import '@once-ui-system/core/css/tokens.css';
 import "./globals.scss";
 import { DataThemeProvider, IconProvider, LayoutProvider, ThemeProvider, ToastProvider } from "@once-ui-system/core";
 import localFont from "next/font/local";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Quiz Master - Buzzer comme à la télé",
+  description: "Buzzer comme à la télé avec Quiz Master ! Défiez vos amis et vivez l'ambiance des jeux télévisés directement depuis votre salon.",
+  icons: {
+    apple: [
+      {
+        rel: "apple-icon",
+        sizes: "57x57",
+        type: "image/png",
+        url: "/favicon/apple-icon-57x57.png",
+      },
+      {
+        rel: "apple-icon",
+        sizes: "60x60",
+        type: "image/png",
+        url: "/favicon/apple-icon-60x60.png",
+      },
+      {
+        rel: "apple-icon",
+        sizes: "72x72",
+        type: "image/png",
+        url: "/favicon/apple-icon-72x72.png",
+      },
+      {
+        rel: "apple-icon",
+        sizes: "76x76",
+        type: "image/png",
+        url: "/favicon/apple-icon-76x76.png",
+      },
+      {
+        rel: "apple-icon",
+        sizes: "114x114",
+        type: "image/png",
+        url: "/favicon/apple-icon-114x114.png",
+      },
+      {
+        rel: "apple-icon",
+        sizes: "120x120",
+        type: "image/png",
+        url: "/favicon/apple-icon-120x120.png",
+      },
+      {
+        rel: "apple-icon",
+        sizes: "144x144",
+        type: "image/png",
+        url: "/favicon/apple-icon-144x144.png",
+      },
+      {
+        rel: "apple-icon",
+        sizes: "152x152",
+        type: "image/png",
+        url: "/favicon/apple-icon-152x152.png",
+      },
+      {
+        rel: "apple-icon",
+        sizes: "180x180",
+        type: "image/png",
+        url: "/favicon/apple-icon-180x180.png",
+      },
+    ],
+    shortcut: [
+      {
+        rel: "shortcut icon",
+        sizes: "16x16",
+        type: "image/png",
+        url: "/favicon/favicon-16x16.png",
+      },
+      {
+        rel: "shortcut icon",
+        sizes: "32x32",
+        type: "image/png",
+        url: "/favicon/favicon-32x32.png",
+      },
+      {
+        rel: "shortcut icon",
+        sizes: "96x96",
+        type: "image/png",
+        url: "/favicon/favicon-96x96.png",
+      },
+      {
+        rel: "shortcut icon",
+        sizes: "144x144",
+        type: "image/png",
+        url: "/favicon/android-icon-144x144.png",
+      },
+      {
+        rel: "shortcut icon",
+        sizes: "192x192",
+        type: "image/png",
+        url: "/favicon/android-icon-192x192.png",
+      },
+    ],
+    icon: [
+      {
+        rel: "icon",
+        type: "image/ico",
+        url: "/favicon/favicon.ico",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        url: "/favicon/favicon-16x16.png",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        url: "/favicon/favicon-32x32.png",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "96x96",
+        url: "/favicon/favicon-96x96.png",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "144x144",
+        url: "/favicon/android-icon-144x144.png",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "192x192",
+        url: "/favicon/android-icon-192x192.png",
+      },
+    ],
+  },
+  applicationName: "Quiz master",
+  authors: {
+    url: "https://quizmaster.fr",
+    name: "Quiz Master",
+  },
+  generator: "Quiz Master",
+  keywords: [
+    "quiz master",
+    "Quiz",
+    "Quiz Game",
+    "Quiz Room",
+    "Salle de quiz",
+    "quiz nice",
+    "salle de quiz nice",
+    "Activité indoor",
+    "Activité intérieur",
+    "Activité indoor Nice",
+    "Activité intérieur Nice",
+    "Quiz Room Nice",
+    "Quiz Nice",
+    "IQuiz Nice",
+    "Quiz Côté d'azur",
+    "Quiz Game Nice",
+  ],
+  referrer: "origin",
+  publisher: "Quiz Master",
+  robots: "index, follow",
+  twitter: {
+    card: "summary",
+    site: "@quizmaster",
+    creator: "@quizmaster",
+  },
+  openGraph: {
+    title: "Quiz Master | Buzzer comme à la télé",
+    description: "Buzzer comme à la télé avec Quiz Master ! Défiez vos amis et vivez l'ambiance des jeux télévisés directement depuis votre salon.",
+    url: "https://quizmaster.fr",
+    siteName: "Quiz Master",
+    locale: "fr_FR",
+    type: "website",
+  },
+};
 
 const myFont = localFont({
   src: [
