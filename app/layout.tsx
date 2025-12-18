@@ -5,6 +5,7 @@ import "./globals.scss";
 import { DataThemeProvider, IconProvider, LayoutProvider, ThemeProvider, ToastProvider } from "@once-ui-system/core";
 import localFont from "next/font/local";
 import { Metadata } from 'next';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: "Quiz Master - Buzzer comme à la télé",
@@ -221,6 +222,21 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         className={myFont.className}
       >
         <head>
+          {/* Google Ads tag */}
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=AW-17809416383"
+            strategy="afterInteractive"
+          />
+
+          <Script id="google-ads" strategy="afterInteractive">
+            {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11544006040');
+          `}
+          </Script>
+
           <script
             dangerouslySetInnerHTML={{
               __html: `

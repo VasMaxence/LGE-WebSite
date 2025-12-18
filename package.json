@@ -12,7 +12,7 @@
     "@once-ui-system/core": "^1.5.4",
     "@splidejs/react-splide": "^0.7.12",
     "framer-motion": "^12.23.25",
-    "next": "16.0.3",
+    "next": "^15.1.11",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
