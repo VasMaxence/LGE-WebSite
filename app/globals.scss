@@ -31,7 +31,9 @@
 body,
 html {
   overflow-x: hidden;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
   background: rgba(23, 23, 23, 1);
   color: var(--textMain);
   font-family: Arial, Helvetica, sans-serif;
@@ -117,5 +119,113 @@ html {
 .hover-yellow-shadow {
   &:hover {
     box-shadow: 0 0 6px 0 #fff102;
+  }
+}
+
+// Promo Modal
+.promo-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 1rem;
+}
+
+.promo-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #1a1a1a;
+  border: 2px solid rgba(255, 241, 2, 0.4);
+  box-shadow:
+    0 0 30px rgba(255, 241, 2, 0.15),
+    0 8px 32px rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+
+  @media (max-width: 640px) {
+    padding: 1.25rem;
+  }
+
+  // Scrollbar styling
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 241, 2, 0.3);
+    border-radius: 3px;
+  }
+}
+
+.promo-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 241, 2, 0.2);
+    border-color: #fff102;
+    color: #fff102;
+  }
+}
+
+.promo-badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background: linear-gradient(135deg, #fff102, #fcc903);
+  color: #171717;
+  font-family: "Satoshi-Bold";
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  animation: promo-badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes promo-badge-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(255, 241, 2, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 241, 2, 0.7);
+  }
+}
+
+.promo-carousel-wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.promo-price-card {
+  background: #232323;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: #fff102;
+    box-shadow: 0 0 12px rgba(255, 241, 2, 0.25);
   }
 }

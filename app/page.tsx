@@ -26,10 +26,12 @@ import ReviewCard from "./components/ReviewCard";
 
 import { Carousel } from "@once-ui-system/core";
 import PhoneIcon from "./components/icon/PhoneIcon";
+import QuizBattlePromoModal from "./components/QuizBattlePromoModal";
 
 export default function Home() {
   return (
     <div className="h-screen w-full">
+      <QuizBattlePromoModal />
       <div className="absolute h-[6rem] overflow-hidden transition-all duration-300 ease-in-out hover:opacity-100 top-0 z-50 w-full bg-navbar text-white px-[2rem] flex items-center justify-between">
         <img alt="Quiz Master Logo" src="/images/main-logo.png" className="w-[6rem] object-contain" />
 
