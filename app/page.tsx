@@ -288,11 +288,11 @@ export default function Home() {
             </div>
             <div className="h-[2rem]" />
             <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-5">
-              <PricingCard title={"Petit groupe"} price={"22€"} priceSuffix={"/PERSONNE"} personText="2 à 4 joueurs" chronoText="50 minutes" />
-              <PricingCard title={"Groupe Moyen"} price={"20€"} priceSuffix={"/PERSONNE"} personText="5 à 6 joueurs" chronoText="50 minutes" />
+              <PricingCard title={"Petit groupe"} price={"18€"} priceSuffix={"/PERSONNE"} personText="2 à 4 joueurs" chronoText="50 minutes" />
+              <PricingCard title={"Groupe Moyen"} price={"18€"} priceSuffix={"/PERSONNE"} personText="5 à 6 joueurs" chronoText="50 minutes" />
               <PricingCard title={"Grand groupe"} price={"18€"} priceSuffix={"/PERSONNE"} personText="7 joueurs et +" chronoText="50 minutes" />
 
-              <PricingCard title={"Pour les petits plaisirs"} price={"15€"} priceSuffix={"/PERSONNE"} personText="à partir de 2 joueurs" chronoText="25 minutes" />
+              <PricingCard title={"Partie express"} price={"12€"} priceSuffix={"/PERSONNE"} personText="à partir de 2 joueurs" chronoText="30 minutes" />
               <PricingCard title={"Tarif étudiant"} price={"18€"} priceSuffix={"/ÉTUDIANT"} personText="5 joueurs minimum" checkText="Sur présentation de la carte étudiante" chronoText="50 minutes" />
               <PricingCard title={"Tarif enfant"} price={"15€"} priceSuffix={"/ENFANT"} personText="Pour les -14 ans" chronoText="50 minutes" />
             </div>

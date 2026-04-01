@@ -2,46 +2,20 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Carousel } from "@once-ui-system/core";
 import Button from "./button/Button";
 import ChronoIcon from "./icon/ChronoIcon";
 
-const LOCALSTORAGE_KEY = "quizBattlePromoLastSeen";
-const EXPIRY_DATE = new Date("2026-03-03T23:59:59");
-const COOLDOWN_MS = 12 * 60 * 60 * 1000; // 12 hours
-const IS_DEV = process.env.NODE_ENV === "development";
-
-const QUIZ_BATTLE_IMAGES = [
-  { src: "/images/quiz_battle/Ecran titre.png", alt: "i-Quiz Battle - Écran titre" },
-  { src: "/images/quiz_battle/Choix avatar.png", alt: "i-Quiz Battle - Choix d'avatar" },
-  { src: "/images/quiz_battle/Choix manche.png", alt: "i-Quiz Battle - Choix de manche" },
-  { src: "/images/quiz_battle/Manche 1 theme.png", alt: "i-Quiz Battle - Thème de manche" },
-  { src: "/images/quiz_battle/Prediction 2.png", alt: "i-Quiz Battle - Prédiction" },
-  { src: "/images/quiz_battle/Bonus manche 1.png", alt: "i-Quiz Battle - Bonus" },
-  { src: "/images/quiz_battle/Utiliser bonus.png", alt: "i-Quiz Battle - Utiliser un bonus" },
-  { src: "/images/quiz_battle/Scores.png", alt: "i-Quiz Battle - Scores" },
-];
+const LOCALSTORAGE_KEY = "closingAnnouncementSeen";
 
 export default function QuizBattlePromoModal() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const now = new Date();
-
-    // Don't show after expiry date (always show in dev)
-    if (!IS_DEV && now > EXPIRY_DATE) return;
-
-    if (!IS_DEV) {
-      const lastSeen = localStorage.getItem(LOCALSTORAGE_KEY);
-      if (lastSeen) {
-        const elapsed = now.getTime() - parseInt(lastSeen, 10);
-        if (elapsed < COOLDOWN_MS) return;
-      }
+    const alreadySeen = localStorage.getItem(LOCALSTORAGE_KEY);
+    if (!alreadySeen) {
+      const timer = setTimeout(() => setIsVisible(true), 800);
+      return () => clearTimeout(timer);
     }
-
-    // Small delay so the page loads first
-    const timer = setTimeout(() => setIsVisible(true), 800);
-    return () => clearTimeout(timer);
   }, []);
 
   const handleClose = () => {
@@ -74,44 +48,29 @@ export default function QuizBattlePromoModal() {
             </button>
 
             {/* Badge + Title */}
-            <div className="flex flex-col items-center gap-y-2">
-              <span className="promo-badge">🎮 NOUVEAU</span>
+            <div className="flex flex-col items-center gap-y-3">
+              <span className="promo-badge promo-badge-closing">⚠️ ANNONCE IMPORTANTE</span>
               <h2 className="text-white text-3xl md:text-4xl joyful-font text-center uppercase">
-                i-Quiz <span className="text-yellow">Battle</span>
+                C'est déjà <span className="text-yellow">fini</span> !
               </h2>
-              <p className="text-white satoshi-font text-sm md:text-base text-center opacity-80 max-w-[500px]">
-                Découvrez notre tout nouveau mode de jeu ! Choisissez votre avatar, affrontez vos amis dans des manches épiques et utilisez vos bonus pour prendre l'avantage !
+              <p className="text-white satoshi-font text-sm md:text-base text-center opacity-90 max-w-[550px]">
+                Après une aventure incroyable, <strong>Quiz Master</strong> fermera définitivement ses portes le <strong className="text-yellow">27 avril 2026</strong>.
+              </p>
+              <p className="text-white satoshi-font text-sm md:text-base text-center opacity-70 max-w-[550px]">
+                Il vous reste encore quelques semaines pour profiter de l'expérience ! Venez vivre une dernière partie mémorable avec vos proches 🎉
               </p>
             </div>
 
-            <div className="h-[1rem]" />
+            <div className="h-[1.5rem]" />
 
-            {/* Image Carousel */}
-            <div className="w-full promo-carousel-wrapper">
-              <Carousel
-                sizes="l"
-                radius="m"
-                indicator="thumbnail"
-                play={{
-                  auto: true,
-                  interval: 4000,
-                }}
-                items={QUIZ_BATTLE_IMAGES.map((img) => ({
-                  slide: (
-                    <div className="w-full flex items-center justify-center">
-                      <img
-                        src={img.src}
-                        alt={img.alt}
-                        className="w-full h-auto object-contain rounded-md"
-                        style={{ maxHeight: "320px" }}
-                      />
-                    </div>
-                  ),
-                }))}
-              />
+            {/* Special pricing */}
+            <div className="flex flex-col items-center gap-y-2">
+              <h3 className="text-white text-xl md:text-2xl joyful-font text-center uppercase">
+                Nos tarifs <span className="text-yellow">spéciaux</span>
+              </h3>
             </div>
 
-            <div className="h-[1.5rem]" />
+            <div className="h-[1rem]" />
 
             {/* Pricing */}
             <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -143,15 +102,18 @@ export default function QuizBattlePromoModal() {
             <div className="h-[1.5rem]" />
 
             {/* CTA */}
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center gap-y-2">
               <Button
-                title={"Réserver"}
+                title={"Réserver une dernière partie"}
                 onClick={() => {
                   window.open("https://quizmaster-nice.resasoft.fr/FR/Centre-v2.awp?P1=QM1", "_blank");
                   handleClose();
                 }}
                 color={"primary"}
               />
+              <p className="text-white satoshi-font text-xs text-center opacity-50 mt-1">
+                Merci à tous pour cette belle aventure ❤️
+              </p>
             </div>
           </motion.div>
         </motion.div>

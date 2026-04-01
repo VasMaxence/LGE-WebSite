@@ -212,6 +212,17 @@ html {
   }
 }
 
+.promo-badge-closing {
+  background: linear-gradient(135deg, #ff6b35, #ff4444);
+  color: #fff;
+  animation: promo-badge-pulse-closing 2s ease-in-out infinite;
+}
+
+@keyframes promo-badge-pulse-closing {
+  0%, 100% { box-shadow: 0 0 8px rgba(255, 68, 68, 0.4); }
+  50% { box-shadow: 0 0 20px rgba(255, 68, 68, 0.7); }
+}
+
 .promo-carousel-wrapper {
   border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
