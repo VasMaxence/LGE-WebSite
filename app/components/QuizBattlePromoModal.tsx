@@ -82,7 +82,7 @@ export default function QuizBattlePromoModal() {
                 <div className="h-[0.5rem]" />
                 <div className="flex flex-row gap-x-2 items-center">
                   <ChronoIcon width={18} height={18} color={"#FFFFFF"} />
-                  <span className="text-sm text-white satoshi-font">7 manches · <span className="text-yellow">1 heure</span></span>
+                  <span className="text-sm text-white satoshi-font">9 manches · <span className="text-yellow">1 heure</span></span>
                 </div>
               </div>
 
