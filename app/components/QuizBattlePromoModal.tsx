@@ -111,9 +111,6 @@ export default function QuizBattlePromoModal() {
                 }}
                 color={"primary"}
               />
-              <p className="text-white satoshi-font text-xs text-center opacity-50 mt-1">
-                Merci à tous pour cette belle aventure ❤️
-              </p>
             </div>
           </motion.div>
         </motion.div>
