@@ -17,34 +17,33 @@ import MultiplyIcon from "./components/icon/MultIcon";
 import VoleurIcon from "./components/icon/VoleurIcon";
 import TrophyIcon from "./components/icon/TrophyIcon";
 import PricingCard from "./components/PricingCard";
-import BirthdayIcon from "./components/icon/BirthdayIcon";
-import TableIcon from "./components/icon/TableIcon";
-import DrinkIcon from "./components/icon/DrinkIcon";
-import CwdTopIcon from "./components/icon/cubeWithDot/CwdTopIcon";
-import CwdBottomIcon from "./components/icon/cubeWithDot/CwdBottomIcon";
+// Icônes de la formule anniversaire (désactivée)
+// import BirthdayIcon from "./components/icon/BirthdayIcon";
+// import TableIcon from "./components/icon/TableIcon";
+// import DrinkIcon from "./components/icon/DrinkIcon";
+// import CwdTopIcon from "./components/icon/cubeWithDot/CwdTopIcon";
+// import CwdBottomIcon from "./components/icon/cubeWithDot/CwdBottomIcon";
 import ReviewCard from "./components/ReviewCard";
 
 import { Carousel } from "@once-ui-system/core";
 import PhoneIcon from "./components/icon/PhoneIcon";
-import QuizBattlePromoModal from "./components/QuizBattlePromoModal";
 
 export default function Home() {
   return (
     <div className="h-screen w-full">
-      <QuizBattlePromoModal />
       <div className="absolute h-[6rem] overflow-hidden transition-all duration-300 ease-in-out hover:opacity-100 top-0 z-50 w-full bg-navbar text-white px-[2rem] flex items-center justify-between">
         <img alt="Quiz Master Logo" src="/images/main-logo.png" className="w-[6rem] object-contain" />
 
         <div className="flex flex-row items-center gap-x-4">
           <button className="flex flex-row items-center gap-x-2 cursor-pointer h-[55px] bg-primary px-[0.7rem] py-[0.5rem]" onClick={() => {
-            window.open("tel:0423320155", "_blank");
+            window.open("tel:0492281653", "_blank");
           }}>
             <PhoneIcon width={32} height={32} color="#171717" />
-            <span className="text-dark satoshi-font-bold text-lg">04.23.32.01.55</span>
+            <span className="text-dark satoshi-font-bold text-lg">04.92.28.16.53</span>
           </button>
 
           <Button title={"Réserver"} onClick={() => {
-            window.open("https://quizmaster-nice.resasoft.fr/FR/Centre-v2.awp?P1=QM1", "_blank");
+            window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=141", "_blank");
           }} color={"primary"} />
         </div>
       </div>
@@ -71,18 +70,18 @@ export default function Home() {
               un <strong className="text-yellow">JEU TV</strong> dans la <strong className="text-yellow">réalité</strong> !
             </h2>
             <Button title={"Réserver"} onClick={() => {
-              window.open("https://quizmaster-nice.resasoft.fr/FR/Centre-v2.awp?P1=QM1", "_blank");
+              window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=141", "_blank");
             }} color={"primary"} />
           </div>
 
           {/* Bottom Offer */}
           <div className="absolute bottom-0 left-0 w-full bottom-black-gradient h-[200px] flex items-end justify-center pb-10">
             <h2 className="px-[2rem] text-xl 2xl:text-3xl text-white joyful-font font-normal text-center">
-              PROFITEZ DE NOS{" "}
+              ENTREPRISES &amp; GROUPES :{" "}
               <strong onClick={() => {
-                window.open("https://quizmaster-nice.resasoft.fr/FR/Centre-v2.awp?P1=QM1", "_blank");
-              }} className="text-yellow underline text-xl md:text-2xl lg:text-3xl 2xl:text-5xl cursor-pointer">OFFRES DE GROUPE</strong>
-              , PLUS VOUS ÊTES, PLUS VOUS GAGNEZ.
+                window.open("tel:0492281653", "_blank");
+              }} className="text-yellow underline text-xl md:text-2xl lg:text-3xl 2xl:text-5xl cursor-pointer">DEMANDEZ VOTRE DEVIS</strong>
+              {" "}AU 04.92.28.16.53
             </h2>
           </div>
         </div>
@@ -126,11 +125,11 @@ export default function Home() {
               <div className="h-[.5rem]" />
               <div className="flex flex-row items-center gap-x-[0.8rem]">
                 <EffectIcon width={24} height={24} color={"#FFF107"} />
-                <span className="text-white text-base satoshi-font">Entre 2 et 34 joueurs en même temps.</span>
+                <span className="text-white text-base satoshi-font">Entre 2 et 12 joueurs en même temps.</span>
               </div>
               <div className="h-[1.5rem]" />
               <Button title={"Réserver"} onClick={() => {
-                window.open("https://quizmaster-nice.resasoft.fr/FR/Centre-v2.awp?P1=QM1", "_blank");
+                window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=141", "_blank");
               }} color={"primary"} />
             </div>
           </div>
@@ -263,7 +262,7 @@ export default function Home() {
             <div className="h-[1.5rem]" />
             <div className="flex">
               <Button title={"Réserver"} onClick={() => {
-                window.open("https://quizmaster-nice.resasoft.fr/FR/Centre-v2.awp?P1=QM1", "_blank");
+                window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=141", "_blank");
               }} color={"primary"} />
             </div>
           </div>
@@ -278,25 +277,24 @@ export default function Home() {
           <div className="flex-1 z-[1]">
             <div className="flex flex-col w-[95%] lg:w-[85%] 2xl:w-[65%]">
               <div className="flex flex-row items-center gap-x-2">
-                <h4 className="text-lg satoshi-font-bold text-primary-gradient">Rassemblez vos amis</h4>
+                <h4 className="text-lg satoshi-font-bold text-primary-gradient">Nos tarifs</h4>
                 <CwdRightIcon height={12} />
               </div>
               <div className="h-[1rem]" />
-              <h2 className="text-white text-4xl lg:text-5xl joyful-font">Plus vous êtes nombreux,<br />moins  c’est chers !</h2>
+              <h2 className="text-white text-4xl lg:text-5xl joyful-font">Deux formules,<br />un seul prix par personne !</h2>
               <div className="h-[1rem]" />
-              <p className="text-white text-base satoshi-font">Vivez une expérience unique en équipe avec des tarifs adaptés à tous les groupes.<br />Défiez vos amis, votre famille ou vos collègues… et montrez-leur qui est le vrai champion !</p>
+              <p className="text-white text-base satoshi-font">Choisissez la partie complète en 9 manches ou la partie express en 4 manches.<br />Défiez vos amis, votre famille ou vos collègues… et montrez-leur qui est le vrai champion !</p>
             </div>
             <div className="h-[2rem]" />
             <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-5">
-              <PricingCard title={"Petit groupe"} price={"18€"} priceSuffix={"/PERSONNE"} personText="2 à 4 joueurs" chronoText="50 minutes" />
-              <PricingCard title={"Groupe Moyen"} price={"18€"} priceSuffix={"/PERSONNE"} personText="5 à 6 joueurs" chronoText="50 minutes" />
-              <PricingCard title={"Grand groupe"} price={"18€"} priceSuffix={"/PERSONNE"} personText="7 joueurs et +" chronoText="50 minutes" />
-
-              <PricingCard title={"Partie express"} price={"12€"} priceSuffix={"/PERSONNE"} personText="à partir de 2 joueurs" chronoText="30 minutes" />
-              <PricingCard title={"Tarif étudiant"} price={"18€"} priceSuffix={"/ÉTUDIANT"} personText="5 joueurs minimum" checkText="Sur présentation de la carte étudiante" chronoText="50 minutes" />
-              <PricingCard title={"Tarif enfant"} price={"15€"} priceSuffix={"/ENFANT"} personText="Pour les -14 ans" chronoText="50 minutes" />
+              <PricingCard title={"Partie complète"} price={"22€"} priceSuffix={"/PERSONNE"} personText="2 à 12 joueurs" checkText="9 manches" chronoText="50 minutes" />
+              <PricingCard title={"Partie express"} price={"15€"} priceSuffix={"/PERSONNE"} personText="2 à 12 joueurs" checkText="4 manches" chronoText="30 minutes" />
+              <PricingCard title={"Entreprises & CE"} price={"Sur devis"} priceSuffix={""} personText="Team building, séminaires, afterworks" checkText="Formule sur mesure" ctaText="Demander un devis" onCtaClick={() => {
+                window.open("tel:0492281653", "_blank");
+              }} />
             </div>
 
+            {/* Formule anniversaire (désactivée)
             <div className="py-[2rem] lg:py-[4rem]" />
 
             <div className="flex flex-col w-[95%] lg:w-[85%] 2xl:w-[65%]">
@@ -340,7 +338,7 @@ export default function Home() {
               <div className="w-full flex flex-row justify-end">
                 <div className="flex flex-row w-min">
                   <button className="w-full flex flex-col gap-y-1 cursor-pointer" onClick={() => {
-                    window.open("https://quizmaster-nice.resasoft.fr/FR/Centre-v2.awp?P1=QM1", "_blank");
+                    window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=141", "_blank");
                   }}>
                     <div className="h-[2px] w-full bg-white" />
                     <div className="flex flex-row items-center gap-x-5">
@@ -353,6 +351,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            */}
           </div>
         </div>
 
@@ -381,6 +380,32 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="py-[2rem] lg:py-[4rem]" />
+
+        {/* Contact */}
+        <div className="px-[3rem] lg:px-[4rem] 2xl:px-[6rem] flex lg:flex-row items-center relative">
+          <div className="flex-1 z-[1]">
+            <div className="flex flex-col w-[95%] lg:w-[85%] 2xl:w-[65%]">
+              <div className="flex flex-row items-center gap-x-2">
+                <h4 className="text-lg satoshi-font-bold text-primary-gradient">Nous contacter</h4>
+                <CwdRightIcon height={12} />
+              </div>
+              <div className="h-[1rem]" />
+              <h2 className="text-white text-4xl lg:text-5xl joyful-font">Retrouvez-nous<br />à Mougins !</h2>
+              <div className="h-[1rem]" />
+              <p className="text-white text-base satoshi-font">Une question, une réservation de groupe ou une demande de devis pour votre entreprise ?<br />Appelez-nous, on vous répond avec plaisir.</p>
+              <div className="h-[1.5rem]" />
+              <div className="flex">
+                <button className="flex flex-row items-center gap-x-3 cursor-pointer h-[55px] bg-primary px-[1rem] py-[0.5rem]" onClick={() => {
+                  window.open("tel:0492281653", "_blank");
+                }}>
+                  <PhoneIcon width={32} height={32} color="#171717" />
+                  <span className="text-dark satoshi-font-bold text-xl">04.92.28.16.53</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="py-[5rem]" />
       </div>
