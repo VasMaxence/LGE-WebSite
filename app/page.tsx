@@ -35,6 +35,12 @@ export default function Home() {
         <img alt="Quiz Master Logo" src="/images/main-logo.png" className="w-[6rem] object-contain" />
 
         <div className="flex flex-row items-center gap-x-4">
+          <div className="hidden sm:block">
+            <Button title={"Nous trouver"} onClick={() => {
+              document.getElementById("nous-trouver")?.scrollIntoView({ behavior: "smooth" });
+            }} color={"primary"} />
+          </div>
+
           <button className="flex flex-row items-center gap-x-2 cursor-pointer h-[55px] bg-primary px-[0.7rem] py-[0.5rem]" onClick={() => {
             window.open("tel:0492281653", "_blank");
           }}>
@@ -64,11 +70,11 @@ export default function Home() {
           {/* Centered Text */}
           <div className="absolute top-1/2 px-[4rem] xl:px-[6rem] left-1/2 w-full transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center gap-y-2">
             <img alt="Quiz Master Logo" src="/images/main-logo.png" className="h-[140px] md:h-[160px] lg:h-[190px] 2xl:h-[240px] object-contain" />
-            <h2 className="text-2xl lg:text-4xl 2xl:text-5xl text-white joyful-font font-normal text-center uppercase">
-              Découvrez l’expérience ultime
+            <h1 className="text-2xl lg:text-4xl 2xl:text-5xl text-white joyful-font font-normal text-center uppercase">
+              Découvrez l’expérience ultime à <strong className="text-yellow">Mougins</strong>
               <br />
               un <strong className="text-yellow">JEU TV</strong> dans la <strong className="text-yellow">réalité</strong> !
-            </h2>
+            </h1>
             <Button title={"Réserver"} onClick={() => {
               window.open("https://lasergame-evolution.resasoft.fr/FR/Centre-v2.awp?P1=141", "_blank");
             }} color={"primary"} />
@@ -79,9 +85,8 @@ export default function Home() {
             <h2 className="px-[2rem] text-xl 2xl:text-3xl text-white joyful-font font-normal text-center">
               ENTREPRISES &amp; GROUPES :{" "}
               <strong onClick={() => {
-                window.open("tel:0492281653", "_blank");
+                window.location.href = "mailto:Lgemougins@gmail.com?subject=Demande%20de%20devis";
               }} className="text-yellow underline text-xl md:text-2xl lg:text-3xl 2xl:text-5xl cursor-pointer">DEMANDEZ VOTRE DEVIS</strong>
-              {" "}AU 04.92.28.16.53
             </h2>
           </div>
         </div>
@@ -290,7 +295,7 @@ export default function Home() {
               <PricingCard title={"Partie complète"} price={"22€"} priceSuffix={"/PERSONNE"} personText="2 à 12 joueurs" checkText="9 manches" chronoText="50 minutes" />
               <PricingCard title={"Partie express"} price={"15€"} priceSuffix={"/PERSONNE"} personText="2 à 12 joueurs" checkText="4 manches" chronoText="30 minutes" />
               <PricingCard title={"Entreprises & CE"} price={"Sur devis"} priceSuffix={""} personText="Team building, séminaires, afterworks" checkText="Formule sur mesure" ctaText="Demander un devis" onCtaClick={() => {
-                window.open("tel:0492281653", "_blank");
+                window.location.href = "mailto:Lgemougins@gmail.com?subject=Demande%20de%20devis";
               }} />
             </div>
 
@@ -382,26 +387,53 @@ export default function Home() {
 
         <div className="py-[2rem] lg:py-[4rem]" />
 
-        {/* Contact */}
-        <div className="px-[3rem] lg:px-[4rem] 2xl:px-[6rem] flex lg:flex-row items-center relative">
-          <div className="flex-1 z-[1]">
-            <div className="flex flex-col w-[95%] lg:w-[85%] 2xl:w-[65%]">
+        {/* Nous trouver */}
+        <div id="nous-trouver" className="px-[3rem] lg:px-[4rem] 2xl:px-[6rem] flex flex-col lg:flex-row items-center gap-y-8 lg:gap-x-10 relative scroll-mt-8">
+          <div className="flex-1 w-full z-[1]">
+            <div className="flex flex-col w-full lg:w-[95%]">
               <div className="flex flex-row items-center gap-x-2">
-                <h4 className="text-lg satoshi-font-bold text-primary-gradient">Nous contacter</h4>
+                <h4 className="text-lg satoshi-font-bold text-primary-gradient">Nous trouver</h4>
                 <CwdRightIcon height={12} />
               </div>
               <div className="h-[1rem]" />
               <h2 className="text-white text-4xl lg:text-5xl joyful-font">Retrouvez-nous<br />à Mougins !</h2>
               <div className="h-[1rem]" />
-              <p className="text-white text-base satoshi-font">Une question, une réservation de groupe ou une demande de devis pour votre entreprise ?<br />Appelez-nous, on vous répond avec plaisir.</p>
+              <p className="text-white text-base satoshi-font">
+                <span className="text-yellow satoshi-font-bold">561 route de la Roquette</span>
+                <br />06250 Mougins
+              </p>
+              <div className="h-[1rem]" />
+              <p className="text-white text-base satoshi-font">Une question ou une réservation de groupe ? Appelez-nous.<br />Pour un devis entreprise, écrivez-nous à{" "}
+                <a href="mailto:Lgemougins@gmail.com?subject=Demande%20de%20devis" className="text-yellow underline">Lgemougins@gmail.com</a>.
+              </p>
               <div className="h-[1.5rem]" />
-              <div className="flex">
+              <div className="flex flex-row flex-wrap items-center gap-4">
+                <Button title={"Itinéraire"} onClick={() => {
+                  window.open("https://maps.app.goo.gl/ajQsYKWJ3gQrU1d29", "_blank");
+                }} color={"primary"} />
                 <button className="flex flex-row items-center gap-x-3 cursor-pointer h-[55px] bg-primary px-[1rem] py-[0.5rem]" onClick={() => {
                   window.open("tel:0492281653", "_blank");
                 }}>
                   <PhoneIcon width={32} height={32} color="#171717" />
                   <span className="text-dark satoshi-font-bold text-xl">04.92.28.16.53</span>
                 </button>
+              </div>
+            </div>
+          </div>
+          <div className="flex-1 w-full z-[1]">
+            <div className="w-full relative">
+              <div className="absolute top-[16px] left-[16px] w-full h-full border bg-dark z-[0]" />
+              <div className="relative z-[1] border-white white-shadow bg-[#232323]">
+                <iframe
+                  title="Quiz Master Mougins sur Google Maps"
+                  src="https://www.google.com/maps?q=561+Route+de+la+Roquette,+06250+Mougins&output=embed"
+                  width="100%"
+                  height="380"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                  style={{ border: "none", display: "block" }}
+                ></iframe>
               </div>
             </div>
           </div>
